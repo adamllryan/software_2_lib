@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<style>
+.grid-container {
+   padding: 4px;
+   display: grid;
+   grid-template-columns: auto auto auto;
+   border: 1px solid #000;
+   }
+   a {font-size: 24px}
+   .item {
+   border: 10px solid #666666;
+   background:#C1C1C1;
+   }
+   .grid-item {
+   border: 1px solid #000;
+   }
+</style>
+<html>
+   <head>
+      <meta charset="ISO-8859-1">
+      <title>Adam's Homepage</title>
+   </head>
+   <body style="background-color:#bb0000">
+      <div class="grid-container">
+         <div class="item">
+            <h1>Adam's <br>Homepage</h1>
+         </div>
+         <div class="blank">
+            <img src="logo.png" alt="OSU symbol">
+         </div>
+         <div class="item">
+            <h2>Items on this page</h2>
+            <ul>
+               <li>Three Headings</li>
+               <li>One Paragraph</li>
+               <li>Two Images</li>
+               <li>Two Lists</li>
+               <li>3* Tables</li>
+               <li>One Hyperlink</li>
+            </ul>
+         </div>
+      </div>
+      <div class="item">Here is a paragraph, I am not sure what to write about, so I'll just write about this page. I used two grid containers above and below this paragraph to organize each of the sections, using some css to add padding and arrange the grid boxes in a 1x3. There is a little padding, but not much. There are two lists, one listing the items used on the page , the other containing an "about me" section. I have a link to github and two images, one is the OSU logo and the other is  the first thing I saw on my phone. I tried to figure out how to align certain items in the center, but most methods would be way too complicated and/or mess up the borders. </div>
+      <div class="grid-container">
+         <div class="item"><a href="https://github.com/adamllryan">Link to Github</a></div>
+         <div class="item">
+            <h1>About Me</h1>
+            <ul>
+               <li>I am a first year student</li>
+               <li>I have played the cello for 8 years now, but am taking a break</li>
+               <li>I used to run cross country</li>
+               <li>I live in Lawrence Tower</li>
+               <li>It is currently 1:16am as of writing this</li>
+            </ul>
+         </div>
+         <div class="item">
+            <img src="random.jpg" alt="random image">
+         </div>
+      </div>
+   </body>
+</html>
