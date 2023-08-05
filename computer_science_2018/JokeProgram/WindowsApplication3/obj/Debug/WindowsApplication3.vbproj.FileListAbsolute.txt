@@ -1,0 +1,10 @@
+S:\CompSci\WindowsApplication3\WindowsApplication3\bin\Debug\WindowsApplication3.exe.config
+S:\CompSci\WindowsApplication3\WindowsApplication3\obj\Debug\WindowsApplication3.Form1.resources
+S:\CompSci\WindowsApplication3\WindowsApplication3\obj\Debug\WindowsApplication3.Resources.resources
+S:\CompSci\WindowsApplication3\WindowsApplication3\obj\Debug\WindowsApplication3.vbproj.GenerateResource.Cache
+S:\CompSci\WindowsApplication3\WindowsApplication3\bin\Debug\WindowsApplication3.exe
+S:\CompSci\WindowsApplication3\WindowsApplication3\bin\Debug\WindowsApplication3.pdb
+S:\CompSci\WindowsApplication3\WindowsApplication3\bin\Debug\WindowsApplication3.xml
+S:\CompSci\WindowsApplication3\WindowsApplication3\obj\Debug\WindowsApplication3.exe
+S:\CompSci\WindowsApplication3\WindowsApplication3\obj\Debug\WindowsApplication3.xml
+S:\CompSci\WindowsApplication3\WindowsApplication3\obj\Debug\WindowsApplication3.pdb
