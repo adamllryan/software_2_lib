@@ -1,0 +1,10 @@
+S:\CompSci\WelcomeProgram\WelcomeProgram\bin\Debug\WelcomeProgram.exe.config
+S:\CompSci\WelcomeProgram\WelcomeProgram\bin\Debug\WelcomeProgram.exe
+S:\CompSci\WelcomeProgram\WelcomeProgram\bin\Debug\WelcomeProgram.pdb
+S:\CompSci\WelcomeProgram\WelcomeProgram\bin\Debug\WelcomeProgram.xml
+S:\CompSci\WelcomeProgram\WelcomeProgram\obj\Debug\WelcomeProgram.Resources.resources
+S:\CompSci\WelcomeProgram\WelcomeProgram\obj\Debug\WelcomeProgram.vbproj.GenerateResource.Cache
+S:\CompSci\WelcomeProgram\WelcomeProgram\obj\Debug\WelcomeProgram.exe
+S:\CompSci\WelcomeProgram\WelcomeProgram\obj\Debug\WelcomeProgram.xml
+S:\CompSci\WelcomeProgram\WelcomeProgram\obj\Debug\WelcomeProgram.pdb
+S:\CompSci\WelcomeProgram\WelcomeProgram\obj\Debug\WelcomeProgram.ClickerGame.resources

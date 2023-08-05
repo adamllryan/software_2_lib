@@ -1,0 +1,20 @@
+S:\CompSci\Weird Thing on the Worksheet\Weird Thing on the Worksheet\bin\Debug\Weird Thing on the Worksheet.exe.config
+S:\CompSci\Weird Thing on the Worksheet\Weird Thing on the Worksheet\bin\Debug\Weird Thing on the Worksheet.exe
+S:\CompSci\Weird Thing on the Worksheet\Weird Thing on the Worksheet\bin\Debug\Weird Thing on the Worksheet.pdb
+S:\CompSci\Weird Thing on the Worksheet\Weird Thing on the Worksheet\bin\Debug\Weird Thing on the Worksheet.xml
+S:\CompSci\Weird Thing on the Worksheet\Weird Thing on the Worksheet\obj\Debug\Weird_Thing_on_the_Worksheet.Form1.resources
+S:\CompSci\Weird Thing on the Worksheet\Weird Thing on the Worksheet\obj\Debug\Weird_Thing_on_the_Worksheet.Resources.resources
+S:\CompSci\Weird Thing on the Worksheet\Weird Thing on the Worksheet\obj\Debug\Weird Thing on the Worksheet.vbproj.GenerateResource.Cache
+S:\CompSci\Weird Thing on the Worksheet\Weird Thing on the Worksheet\obj\Debug\Weird Thing on the Worksheet.exe
+S:\CompSci\Weird Thing on the Worksheet\Weird Thing on the Worksheet\obj\Debug\Weird Thing on the Worksheet.xml
+S:\CompSci\Weird Thing on the Worksheet\Weird Thing on the Worksheet\obj\Debug\Weird Thing on the Worksheet.pdb
+\\sif\student\2021\23125\CompSci\Weird Thing on the Worksheet\Weird Thing on the Worksheet\bin\Debug\Weird Thing on the Worksheet.exe.config
+\\sif\student\2021\23125\CompSci\Weird Thing on the Worksheet\Weird Thing on the Worksheet\obj\Debug\Weird Thing on the Worksheet.exe
+\\sif\student\2021\23125\CompSci\Weird Thing on the Worksheet\Weird Thing on the Worksheet\obj\Debug\Weird Thing on the Worksheet.xml
+\\sif\student\2021\23125\CompSci\Weird Thing on the Worksheet\Weird Thing on the Worksheet\obj\Debug\Weird Thing on the Worksheet.pdb
+\\sif\student\2021\23125\CompSci\Weird Thing on the Worksheet\Weird Thing on the Worksheet\bin\Debug\Weird Thing on the Worksheet.exe
+\\sif\student\2021\23125\CompSci\Weird Thing on the Worksheet\Weird Thing on the Worksheet\bin\Debug\Weird Thing on the Worksheet.pdb
+\\sif\student\2021\23125\CompSci\Weird Thing on the Worksheet\Weird Thing on the Worksheet\bin\Debug\Weird Thing on the Worksheet.xml
+\\sif\student\2021\23125\CompSci\Weird Thing on the Worksheet\Weird Thing on the Worksheet\obj\Debug\Weird_Thing_on_the_Worksheet.Form1.resources
+\\sif\student\2021\23125\CompSci\Weird Thing on the Worksheet\Weird Thing on the Worksheet\obj\Debug\Weird_Thing_on_the_Worksheet.Resources.resources
+\\sif\student\2021\23125\CompSci\Weird Thing on the Worksheet\Weird Thing on the Worksheet\obj\Debug\Weird Thing on the Worksheet.vbproj.GenerateResource.Cache
