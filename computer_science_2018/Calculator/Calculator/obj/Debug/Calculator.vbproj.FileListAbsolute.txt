@@ -1,0 +1,10 @@
+S:\CompSci\Calculator\Calculator\bin\Debug\Calculator.exe.config
+S:\CompSci\Calculator\Calculator\bin\Debug\Calculator.exe
+S:\CompSci\Calculator\Calculator\bin\Debug\Calculator.pdb
+S:\CompSci\Calculator\Calculator\bin\Debug\Calculator.xml
+S:\CompSci\Calculator\Calculator\obj\Debug\Calculator.Form1.resources
+S:\CompSci\Calculator\Calculator\obj\Debug\Calculator.Resources.resources
+S:\CompSci\Calculator\Calculator\obj\Debug\Calculator.vbproj.GenerateResource.Cache
+S:\CompSci\Calculator\Calculator\obj\Debug\Calculator.exe
+S:\CompSci\Calculator\Calculator\obj\Debug\Calculator.xml
+S:\CompSci\Calculator\Calculator\obj\Debug\Calculator.pdb

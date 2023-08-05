@@ -1,0 +1,10 @@
+S:\CompSci\AreaCalculator\AreaCalculator\bin\Debug\AreaCalculator.exe.config
+S:\CompSci\AreaCalculator\AreaCalculator\obj\Debug\AreaCalculator.InterfaceHub.resources
+S:\CompSci\AreaCalculator\AreaCalculator\obj\Debug\AreaCalculator.Resources.resources
+S:\CompSci\AreaCalculator\AreaCalculator\obj\Debug\AreaCalculator.vbproj.GenerateResource.Cache
+S:\CompSci\AreaCalculator\AreaCalculator\bin\Debug\AreaCalculator.exe
+S:\CompSci\AreaCalculator\AreaCalculator\bin\Debug\AreaCalculator.pdb
+S:\CompSci\AreaCalculator\AreaCalculator\bin\Debug\AreaCalculator.xml
+S:\CompSci\AreaCalculator\AreaCalculator\obj\Debug\AreaCalculator.exe
+S:\CompSci\AreaCalculator\AreaCalculator\obj\Debug\AreaCalculator.xml
+S:\CompSci\AreaCalculator\AreaCalculator\obj\Debug\AreaCalculator.pdb
