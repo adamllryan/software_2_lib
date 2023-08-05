@@ -1,0 +1,10 @@
+S:\CompSci\RestaurantBuddy\RestaurantBuddy\bin\Debug\RestaurantBuddy.exe.config
+S:\CompSci\RestaurantBuddy\RestaurantBuddy\bin\Debug\RestaurantBuddy.exe
+S:\CompSci\RestaurantBuddy\RestaurantBuddy\bin\Debug\RestaurantBuddy.pdb
+S:\CompSci\RestaurantBuddy\RestaurantBuddy\bin\Debug\RestaurantBuddy.xml
+S:\CompSci\RestaurantBuddy\RestaurantBuddy\obj\Debug\RestaurantBuddy.Form1.resources
+S:\CompSci\RestaurantBuddy\RestaurantBuddy\obj\Debug\RestaurantBuddy.Resources.resources
+S:\CompSci\RestaurantBuddy\RestaurantBuddy\obj\Debug\RestaurantBuddy.vbproj.GenerateResource.Cache
+S:\CompSci\RestaurantBuddy\RestaurantBuddy\obj\Debug\RestaurantBuddy.exe
+S:\CompSci\RestaurantBuddy\RestaurantBuddy\obj\Debug\RestaurantBuddy.xml
+S:\CompSci\RestaurantBuddy\RestaurantBuddy\obj\Debug\RestaurantBuddy.pdb
