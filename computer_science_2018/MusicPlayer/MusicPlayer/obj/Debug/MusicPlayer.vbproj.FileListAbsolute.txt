@@ -1,0 +1,10 @@
+S:\CompSci\MusicPlayer\MusicPlayer\bin\Debug\MusicPlayer.exe.config
+S:\CompSci\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.Resources.resources
+S:\CompSci\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.vbproj.GenerateResource.Cache
+S:\CompSci\MusicPlayer\MusicPlayer\bin\Debug\MusicPlayer.exe
+S:\CompSci\MusicPlayer\MusicPlayer\bin\Debug\MusicPlayer.pdb
+S:\CompSci\MusicPlayer\MusicPlayer\bin\Debug\MusicPlayer.xml
+S:\CompSci\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.exe
+S:\CompSci\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.xml
+S:\CompSci\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.pdb
+S:\CompSci\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.SmashPlayer.resources
