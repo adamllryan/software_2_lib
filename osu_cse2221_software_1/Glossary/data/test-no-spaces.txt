@@ -1,0 +1,23 @@
+Word1
+Default definition
+Is hyperlinked to default
+
+Default
+Is hyperlinked to word1
+
+Word2
+Word1
+Word4
+Word5 is not hyperlinked because there is no word5
+Will be able to determine if words are words if at the beginning and end of phrase word3
+
+Word3
+Word1 word2 word1
+Only the first instance of a duplicate word is hyperlinked because it is useless to link twice
+Also saves me time
+EDIT: I made it output them all because of issues so ignore that
+
+Word4
+Word
+Word1234 will not be hyperlinked because word1 is only a segment of the word
+

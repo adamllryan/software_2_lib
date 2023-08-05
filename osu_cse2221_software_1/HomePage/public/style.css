@@ -1,0 +1,23 @@
+@charset "ISO-8859-1";
+
+
+
+
+
+   .grid-container {
+   padding: 4px;
+   display: grid;
+   grid-template-columns: auto auto auto;
+   border: 1px solid #000;
+   }
+   a {font-size: 24px}
+   .item {
+   border: 10px solid #666666;
+   background:#C1C1C1;
+   }
+   .grid-item {
+   border: 1px solid #000;
+   }
+
+
+
