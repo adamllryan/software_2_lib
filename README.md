@@ -1,9 +1,13 @@
 2018-2019:
 - Highschool Computer Science
+
+
 2019-2020:
 - AP Computer Science A
+
 2021:
 - Software 1 (Data structures)
+
 2022:
 - Software 2 (Data structures)
 - Foundations 1 (Data structure analysis)
@@ -12,6 +16,7 @@
 - Foundations 2 (Data structure analysis)
 - C#/.NET Development
 - C++ Development
+
 2023:
 - Databases
 - Wired Networking
