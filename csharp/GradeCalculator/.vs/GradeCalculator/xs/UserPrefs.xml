@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{F1EAF39B-CD92-482C-BCB4-C225B54C9B62}|Default">
+  <MonoDevelop.Ide.ItemProperties.GradeCalculator PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GradeCalculator/Program.cs">
+    <Files>
+      <File FileName="GradeCalculator/Program.cs" Line="27" Column="20" />
+      <File FileName="GradeCalculator/grades.txt" Line="23" Column="40" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GradeCalculator" expanded="True">
+            <Node name="GradeCalculator" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+</Properties>

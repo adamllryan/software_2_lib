@@ -1,0 +1,15 @@
+/Users/adam/Projects/GradeCalculator/GradeCalculator/bin/Debug/net6.0/GradeCalculator
+/Users/adam/Projects/GradeCalculator/GradeCalculator/bin/Debug/net6.0/GradeCalculator.deps.json
+/Users/adam/Projects/GradeCalculator/GradeCalculator/bin/Debug/net6.0/GradeCalculator.runtimeconfig.json
+/Users/adam/Projects/GradeCalculator/GradeCalculator/bin/Debug/net6.0/GradeCalculator.dll
+/Users/adam/Projects/GradeCalculator/GradeCalculator/bin/Debug/net6.0/GradeCalculator.pdb
+/Users/adam/Projects/GradeCalculator/GradeCalculator/obj/Debug/net6.0/GradeCalculator.csproj.AssemblyReference.cache
+/Users/adam/Projects/GradeCalculator/GradeCalculator/obj/Debug/net6.0/GradeCalculator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/adam/Projects/GradeCalculator/GradeCalculator/obj/Debug/net6.0/GradeCalculator.AssemblyInfoInputs.cache
+/Users/adam/Projects/GradeCalculator/GradeCalculator/obj/Debug/net6.0/GradeCalculator.AssemblyInfo.cs
+/Users/adam/Projects/GradeCalculator/GradeCalculator/obj/Debug/net6.0/GradeCalculator.csproj.CoreCompileInputs.cache
+/Users/adam/Projects/GradeCalculator/GradeCalculator/obj/Debug/net6.0/GradeCalculator.dll
+/Users/adam/Projects/GradeCalculator/GradeCalculator/obj/Debug/net6.0/refint/GradeCalculator.dll
+/Users/adam/Projects/GradeCalculator/GradeCalculator/obj/Debug/net6.0/GradeCalculator.pdb
+/Users/adam/Projects/GradeCalculator/GradeCalculator/obj/Debug/net6.0/GradeCalculator.genruntimeconfig.cache
+/Users/adam/Projects/GradeCalculator/GradeCalculator/obj/Debug/net6.0/ref/GradeCalculator.dll
