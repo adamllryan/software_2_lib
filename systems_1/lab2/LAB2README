@@ -1,0 +1,44 @@
+BY SUBMITTING THIS FILE TO CARMEN, I CERTIFY THAT I HAVE STRICTLY ADHERED
+TO THE TENURES OF THE OHIO STATE UNIVERSITYâ€™S ACADEMIC INTEGRITY POLICY
+WITH RESPECT TO THIS ASSIGNMENT.
+THIS IS THE README FILE FOR LAB 2.
+Student name: Adam Ryan
+
+2. 8-9 hours (mostly really late at night so not very productive)
+
+3. I am mainly worried about missing steps in the instructions list. Lots to read and easy to miss. 
+I do know that we weren't supposed to worry too much about user error, but there are no checks for incorrect input (technically you could break the program by entering an empty text)
+I think I spent as much or more time just reading and trying to find things in the instructions sheet; my current strategy is to 
+copy paste the whole thing in a text file and delete sections as I complete them. 
+EDIT: I have been testing this for a while now, and while bit_decode2 never fails, bit_decode1 seems inconsistent
+I am getting different results with the same input
+
+[ryan.1781@cse-sl1 lab2]$ ./bit_decode1
+enter 4-bit key: 0110
+enter encoded text: 24 88 12 23 00 83 24 23 04 84 02 8A
+¦¦¦¦¦¦¦¦¦¦¦
+[ryan.1781@cse-sl1 lab2]$ ./bit_decode1
+enter 4-bit key: 24 88 12 23 00 83 24 23 04 84 02 8A
+enter encoded text: ?¦¦ ¦¦¦¦
+[ryan.1781@cse-sl1 lab2]$ ./bit_decode1
+enter 4-bit key: 0110
+enter encoded text: 24
+t
+But also it works the majority of the time. 
+
+
+
+
+4. Used disp /x key and disp /x input
+key = 0x0
+input = 0x0
+
+input = 0x1 //first digit
+input = 0x2 //second digit
+input = 0x3//third digit
+input = 0x6 //fourth digit
+key = 0x66 //function call is just a quick return statement
+
+5. Traced through the file, found that since PROMPT wasn't defined, the lines in the ifdefs were totally omitted. 
+
+

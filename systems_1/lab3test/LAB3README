@@ -1,0 +1,17 @@
+BY SUBMITTING THIS FILE TO CARMEN, I CERTIFY THAT I HAVE STRICTLY ADHERED TO
+THE TENURES OF THE OHIO STATE UNIVERSITY’S ACADEMIC INTEGRITY POLICY WITH
+RESPECT TO THIS ASSIGNMENT.
+THIS IS THE README FILE FOR LAB 3. 
+Adam Ryan
+1. 9 hours
+2. I do not feel 100% confident with pointers yet, while it works it does not feel completely correct. I really dislike this 10 line max
+system because every time I hit 10 lines, I need to create a new method in the lab3.h file and make sure it matches where it is called and 
+the new file where it is implemented. I understand the reasoning but it's very tedious to ensure consistency in 3 different places when it
+would make more sense to have it all in 1 function. 
+I am very confused about this one thing in save_info. I couldn't figure out a way to pass a char[256] as a parameter and I couldn't pass it
+as a char* because now it has no value, so I was stuck with an 11 line function. treating it as uninitialized char* would cause the
+thispizza pointer to be overwritten and create a seg fault, so I just gave up. 
+3. Used GDB to solve issues with thispizza pointer and segfaults with writing to file. Mainly put breakpoints at and around save_info()
+so I could trace through it and use disp to view values. I forgot about parameter pass by values so it took me a few hours to figure out
+why thispizza was empty. I ran through it with gdb a bunch of times but it didn't occur to me that thispizza only having one value meant
+that it wasn't writing to the passed pointer (it was able to print out fine before I moved everything into its own function). 

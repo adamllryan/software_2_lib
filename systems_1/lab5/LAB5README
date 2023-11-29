@@ -1,0 +1,249 @@
+BY SUBMITTING THIS FILE TO CARMEN, I CERTIFY THAT I HAVE STRICTLY ADHERED TO THE TENURES OF THE OHIO STATE UNIVERSITY’S ACADEMIC INTEGRITY POLICY.
+
+THIS IS THE README FILE FOR LAB 5.
+
+Name: Adam Ryan
+
+When answering the questions in this file, make a point to take a look at whether the most significant bit (remembering it can be in bit position 7, 15, 31 or 63 depending upon what size value we are working with) to see if the results you see change based on whether it is a 0 or a 1.
+
+It’s best that you present all register values in hexadecimal rather than decimal.  You will be able to understand what is happening more easily.  
+
+Monitor the RFLAGS.  What instructions change RFLAGS, what instructions don’t?
+.file "lab5.s"
+.globl main
+.type	main, @function
+
+.text
+main:
+pushq %rbp	#stack housekeeping
+movq %rsp, %rbp
+
+Label1:
+#as you go through this program note the changes to %rip
+movq	$0x8877665544332211, %rax	# the value of %rax is: 0x8877665544332211
+
+# Recall that -1 is represented as 0xff, 0xffff, etc. depending upon the size of the value
+movb	$-1, %al					# the value of %rax is: 0x88776655443322FF
+movw	$-1, %ax					# the value of %rax is: 0x887766554433FFFF
+movl	$-1, %eax						# the value of %rax is: 0x00000000FFFFFFFF
+movq	$-1, %rax					# the value of %rax is: 0xFFFFFFFFFFFFFFFF
+
+movl	$-1, %eax						# the value of %rax is: 0x00000000FFFFFFFF
+cltq								# the value of %rax is: 0xFFFFFFFFFFFFFFFF
+
+movl	$0x7fffffff, %eax				# the value of %rax is: 0x000000007FFFFFFF
+cltq								# the value of %rax is: 0x000000007FFFFFFF
+movl	$0x8fffffff, %eax				# the value of %rax is: 0x000000008FFFFFFF
+cltq								# the value of %rax is: 0xFFFFFFFF8FFFFFFF
+								# What is the difference between the values 0x7fffffff and 0x8fffffff 
+										0x7fffffff is the largest positive value for twos complement 8 byte integer and 0x8fffffff is the smallest negative value
+								# what do you think the cltq instruction does? convert long to quad
+
+movq	$0x8877665544332211, %rax	# the value of %rax is: 0x8877665544332211
+								# the value of %rdx *before* movb $0xAA, %dl executes is: 0x00007FFFFFFFE3C8
+
+	# Note the value of the 8-byte register values vs the 1, 2, or 4-byte register values
+	# How does each size instruction suffix affect the 8-byte register?  Don't write answers here; you'll need this info later.
+movb	$0xAA, %dl				# the value of %rdx is: 0x00007FFFFFFFE3AA
+movb	%dl, %al					# the value of %rax is: 0x88776655443322AA
+movsbw	%dl, %ax					# the value of %rax is: 0x887766554433FFAA
+movzbw	%dl, %ax					# the value of %rax is: 0x88776655443300AA
+
+movq	$0x8877665544332211, %rax	# the value of %rax is: 0x8877665544332211
+movb 	%dl, %al					# the value of %rax is: 0x88776655443322AA
+movsbl	%dl, %eax					# the value of %rax is: 0x00000000FFFFFFAA
+movzbl	%dl, %eax					# the value of %rax is: 0x00000000000000AA
+
+movq	$0x8877665544332211, %rax	# the value of %rax is: 0x8877665544332211
+movb 	%dl, %al					# the value of %rax is: 0x88776655443322AA
+movsbq	%dl, %rax					# the value of %rax is: 0xFFFFFFFFFFFFFFAA
+movzbq	%dl, %rax					# the value of %rax is: 0x00000000000000AA
+
+movq	$0x8877665544332211, %rax	# the value of %rax is: 0x8877665544332211
+								# the value of %rdx *before* movb $0x55, %dl executes is: 0x00007FFFFFFFE3AA
+movb	$0x55, %dl				# the value of %rdx is: 0x00007FFFFFFFE355
+movb	%dl, %al					# the value of %rax is: 0x8877665544332255
+movsbw	%dl, %ax					# the value of %rax is: 0x8877665544330055
+movzbw	%dl, %ax					# the value of %rax is: 0x8877665544330055
+
+movq	$0x8877665544332211, %rax	# the value of %rax is: 0x8877665544332211
+movb 	%dl, %al					# the value of %rax is: 0x8877665544332255
+movsbl	%dl, %eax					# the value of %rax is: 0x0000000000000055
+movzbl	%dl, %eax					# the value of %rax is: 0x0000000000000055
+
+movq	$0x8877665544332211, %rax	# the value of %rax is: 0x8877665544332211
+movb 	%dl, %al					# the value of %rax is: 0x8877665544332255
+movsbq	%dl, %rax					# the value of %rax is: 0x0000000000000055
+movzbq	%dl, %rax					# the value of %rax is: 0x0000000000000055
+
+#movq	$0x8877665544332211, %rax	
+#pushb	%al
+#movq	$0, %rax
+#	popb	%al	
+			
+movq	$0x8877665544332211, %rax	# the value of %rax is: 0x8877665544332211		the value of %rsp is: 0x00007FFFFFFFE2D0
+pushw	%ax						# the value of %rsp is: 0x00007FFFFFFFE2CE
+								# the difference between the two values of %rsp is: D0-CE=2
+movq	$0, %rax					# the value of %rax is: 0x0000000000000000
+popw	%ax						# the value of %rax is: 0x0000000000002211		How did the value of %rsp change? returned to 0x00007FFFFFFFE2D0
+
+movq	$0x8877665544332211, %rax	# the value of %rax is: 0x8877665544332211		the value of %rsp is: 0x00007FFFFFFFE2D0
+pushw	%ax						# the value of %rsp is: 0x00007FFFFFFFE2CE
+								# the difference between the two values of %rsp is: 2 again
+movq	$-1, %rax					# the value of %rax is: 0xFFFFFFFFFFFFFFFF
+popw	%ax						# the value of %rax is: 0xFFFFFFFFFFFF2211		How did the value of %rsp change? returned to 0x00007FFFFFFFE2D0
+
+
+#movq	$0x8877665544332211, %rax	
+#pushl	%eax
+#movq	$0, %rax
+#popl	%eax				
+
+movq	$0x8877665544332211, %rax	# the value of %rax is: 0x8877665544332211		the value of %rsp is: 00007FFFFFFFE2D0
+pushq	%rax						# the value of %rsp is: 0x00007FFFFFFFE2C8
+								# the difference between the two values of %rsp is: D0-C8=8
+movq	$0, %rax					# the value of %rax is: 0x0000000000000000
+popq	%rax						# the value of %rax is: 0x8877665544332211		How did the value of %rsp change? became 0x00007FFFFFFFE2D0
+
+								# what rflags are set? PF ZF IF
+
+movq	$0x500, %rax				# the value of %rax is: 0x0000000000000500
+movq	$0x123, %rcx				# the value of %rcx is: 0x0000000000000123
+# 0x123 - 0x500
+subq	%rax, %rcx					# the value of %rax is: 0x0000000000000500
+								# the value of %rcx is: 0xFFFFFFFFFFFFFC23
+
+								# what rflags are set? CF SF IF
+
+movq 	$0x500, %rax				# the value of %rax is: 0x0000000000000500
+movq	$0x123, %rcx				# the value of %rcx is: 0x0000000000000123
+# 0x500 - 0x123
+subq	%rcx, %rax					# the value of %rax is: 0x00000000000003DD
+								# what rflags are set? PF AF IF
+
+movq	$0x500, %rax				# the value of %rax is: 0x0000000000000500
+movq	$0x500, %rcx				# the value of %rcx is: 0x0000000000000500
+# 0x500 - 0x500
+subq	%rcx, %rax					# the value of %rax is: 0x0000000000000000
+								# what rflags are set? PF ZF IF
+
+movb	$0xff, %al					# the value of %rax is: 0x00000000000000FF
+# 0xff +=1 (1 byte)
+incb	%al							# the value of %rax is: 0x0000000000000000		what rflags are set? PF AF ZF IF
+
+movb	$0xff, %al					# the value of %rax is: 0x00000000000000FF
+# 0xff +=1 (4 bytes)
+incl	%eax						# the value of %rax is: 0x0000000000000100		what rflags are set? PF AF IF
+
+movq	$-1, %rax					# the value of %rax is: 0xFFFFFFFFFFFFFFFF
+# 0xff +=1 (8 bytes)
+incq	%rax							# the value of %rax is: 0x0000000000000000		what rflags are set? PF AF ZF IF
+
+movq	$0x8877665544332211, %rax	# the value of %rax is: 0x8877665544332211		
+movq	$0x8877665544332211, %rcx	# the value of %rax is: 0x8877665544332211		what rflags are set? PF AF ZF IF
+addq	%rcx, %rax					# the value of %rax is: 0x10EECCAA88664422		what rflags are set? CF PF IF OF
+
+movq 	$0x8877665544332211, %rax	# the value of %rax is: 0x8877665544332211		
+andq	$0x1, %rax					# the value of %rax is: 0x0000000000000001
+
+movq 	$0x8877665544332211, %rax	# the value of %rax is: 0x8877665544332211		explain why the values for AND/OR/XOR are
+andq	%rax, %rax					# the value of %rax is: 0x8877665544332211		what they are they are bitwise operations on the two registers
+orq	%rax, %rax					# the value of %rax is: 0x8877665544332211
+xorq	%rax, %rax					# the value of %rax is: 0x0000000000000000
+
+movq 	$0x8877665544332211, %rax	# the value of %rax is: 0x8877665544332211		
+andw	$0x3300, %ax				# the value of %rax is: 0x8877665544332200		explain the value in the 8 byte register vs: 0x2211 & 0x3300 = 0x2200
+								#the value in the 2 byte register
+
+salq	$4, %rax						# the value of %rax is: 0x8776655443322000		Why? %rax gets shifted left 4, a hex value = 4 bits so we see one hex shift
+
+movq	$0xff0000001f000000, %rax	# the value of %rax is: 0xff0000001f000000
+								# to help you understand what's happening in this part of the code, write the value in %rax in binary
+								# on a piece of scratch paper for the remaining instructions in this file
+								# and watch the bits move as each shift instruction occurs.
+								# You should notice how each of the 1-, 2-, 4-, and 8-byte shift instructions works
+
+				# within the 8-byte register.
+sall	$1, %eax						# the value of %rax is: 0x000000003E000000		do these shift instructions do what you expected?
+sall	$1, %eax						# the value of %rax is: 0x000000007C000000
+sall	$1, %eax						# the value of %rax is: 0x00000000F8000000
+sall	$1, %eax						# the value of %rax is: 0x00000000F0000000
+sall	$1, %eax						# the value of %rax is: 0x00000000E0000000
+
+movq	$0xff000000ff000000, %rax	# the value of %rax is: 0xFF000000FF000000	
+salq	$1, %rax						# the value of %rax is: 0xFE000001FE000000
+salq	$1, %rax						# the value of %rax is: 0xFC000003FC000000
+salq	$1, %rax						# the value of %rax is: 0xF8000007F8000000
+salq	$1, %rax						# the value of %rax is: 0xF000000FF0000000
+salq	$1, %rax						# the value of %rax is: 0xE000001FE0000000
+
+movq	$0xff000000000000ff, %rax	# the value of %rax is: 0xff000000000000ff
+sarq	$1, %rax						# the value of %rax is: 0xFF800000000007F
+sarq	$1, %rax						# the value of %rax is: 0xFFC00000000003F
+sarq	$1, %rax						# the value of %rax is: 0xFFE00000000001F
+sarq	$1, %rax						# the value of %rax is: 0xFFF00000000000F
+sarq	$1, %rax						# the value of %rax is: 0xFFF800000000007
+
+movq	$0xff000000000000ff, %rax	# the value of %rax is: 0xff000000000000ff
+shrq	$1, %rax						# the value of %rax is: 0x7F800000000007F
+shrq	$1, %rax						# the value of %rax is: 0x3FC00000000003F
+shrq	$1, %rax						# the value of %rax is: 0x1FE00000000001F
+shrq	$1, %rax						# the value of %rax is: 0xFF000000000000F
+shrq	$1, %rax						# the value of %rax is: 0x7F8000000000007
+
+movq	$0xff000000000000ff, %rax	# the value of %rax is: 0xff000000000000ff
+sarw	$1, %ax						# the value of %rax is: 0xFF000000000007F
+sarw	$1, %ax						# the value of %rax is: 0xFF000000000003F
+sarw	$1, %ax						# the value of %rax is: 0xFF000000000001F
+sarw	$1, %ax						# the value of %rax is: 0xFF000000000000F
+sarw	$1, %ax						# the value of %rax is: 0xFF0000000000007
+
+movq	$0xff000000000000ff, %rax	# the value of %rax is: 0xff000000000000ff
+shrw	$1, %ax						# the value of %rax is: 0xFF000000000007F
+shrw	$1, %ax						# the value of %rax is: 0xFF000000000003F
+shrw	$1, %ax						# the value of %rax is: 0xFF000000000001F
+shrw	$1, %ax						# the value of %rax is: 0xFF000000000000F
+shrw	$1, %ax						# the value of %rax is: 0xFF0000000000007
+
+leave				#post function stack cleanup
+ret
+.size	main, .-main	
+1.	Write a paragraph that describes what you observed happen to the value in register %rax as you watched movX (where X is ‘q’, ‘l’, ‘w’, and ‘b’) instructions executed.  Describe what data changes occur (and, perhaps, what data changes you expected to occur that didn’t).  Make a point to address what happens when moving less than 8 bytes of data to a register.
+
+	Calling movx with suffixes would copy 8 bytes to a register using q, 4 bytes with l, 2 bytes with w, and 1 byte using b. When pushing sizes less than 8 bytes, only certain bytes will be overwritten and the left will be retained. If pushing 4 bytes to %eax, %ax will be untouched. Basically, only the size you call will be changed and the rest of the register will stay untouched. 
+
+2.	What did you observe happens when the cltq instruction is executed?  Did it matter what value is in %eax?  What is the difference between 0x7fffffff  and 0x8fffffff ?  Does cltq have any operands?
+	
+	cltq converts long to quad. Yes, %eax gets extended. 0x7fffffff is the maximum positive value in a 2s complement 8 byte integer and 0x8fffffff is the maximum negative value. cltq takes no operands. 
+
+3.	Write a paragraph that describes what you saw with respect to what happens as you use the movsXX and movzXX instructions with different sizes of registers. What is the difference between the value 0xAA and the value 0x55? What do you observe with respect to the source and destination registers used in each instruction?  Is there a relationship between them and the XX values?  Describe what data changes occur (and, perhaps, what data changes you expected to occur that didn’t).
+
+	movsXX copies the first suffix into the second suffix, scaling the size from first to second extending the sign in the process, and movzXX does the same but copies zeros instead of the sign. AA is -86 and 55 is 85, they are max positive and negative signed ints for two byte signed integers. Basically the two XX casts the left suffix into the right and moves data across those sizes, while s and z represent sign casting and zero casting for the empty spaces. 
+
+4.	Write a paragraph that describes what you observed as you watched different push/pop instructions execute. What values are  put on the stack based on the suffix used?  (Use the instructions further down in this question to see stack values.) How did the value in %rsp change?   Use the command help x from the command line in gdb. This will give you the format of the x instruction that allows you to see what is in specific addresses in memory. Note that a word means 2 bytes in x86-64, but it means 4 bytes when using the x command in gdb. To print 2 byte values with x, you must specify h for halfword. If you wish to use an address located in a register as an address to print from using x, use $ rather than % to designate the register.  For example, if you wanted to print, in hexadecimal format, 1 2-byte value that is located in memory starting at the address located in register rsp, then you could use x/1xh $rsp.  If you wanted to print, in hexadecimal format, 1 8-byte value that is located in memory starting at the address located in register rsp, then you could use x/1xg $rsp.  You might want to play with this command a little.  ?  It will be well worth your time to do so as the semester continues.
+ 
+	Only the size specified by the suffix was placed on the stack. %rsp always points to the top of the stack, and it would increment or decrement by the size of the suffix when called. calling pushX will push X bytes onto the stack and %rsp will increment by X, and calling popX will return X bytes and decrement %rsp by X. Only the values specified by the suffix were placed on the stack from the specified register. 
+
+5.	What did you observe happen to the condition code values as instructions that process within the ALU executed? What instructions caused changes?  What instructions within this program did not cause condition codes to change? When changes occurred, were the changes what you expected? Why or why not?
+
+	Flags were set depending on the resulting values. PF and IF showed up frequently, and any math caused changes in flags. Moves normally did not change flags because it was copying data, meaning flags should also not change. Flag changes can be expected when conditions of that register change, eg PF turning on when the last byte goes from 00000001 to 10000001
+
+6.	There were some instructions that performed bitwise AND/OR/XOR data manipulation.  What did you observe as the suffix changed? Is it consistent with respect to what you learned about these bitwise instructions in class?
+	
+	Only the size of the suffix was changed. Yes it was consistent. I didn't notice too much because most of the bitwise was compared to itself. 
+
+7.	There were some instructions that executed left or right bit shifting.  What did you observe with respect to the register data?  Did the size of the data being shifted change the result in the register?  How? Is it consistent with respect to what you learned about these bitwise instructions in class?
+
+	Data was shifted respective to the suffix passed. The size did change the result because only the size of the suffix would be shifted in the register. Yes it was consistent. 
+
+8.	What did you observe happening to the value in register %rip over the course the program? Did it always change by the same amount as each instruction executed?
+
+	Rip looks like it was keepingr track of the instruction line, constantly increases as program runs but started at something like 0x400000. 
+	
+9.	What did you observe when you took the comments away from the two different instruction sets and tried to reassemble the program? There were questions in item M and N in the Lab 5 Description; include your answers to those questions here.  Based upon your experiences with this exercise, what can you conclude with respect to push/pop instructions when used with the q, l, w, and b suffixes?
+
+	Removing the first set of comments and compiling will throw an error because b is not a valid suffix. Uncommenting the second set throws the same error stating l is not a valid suffix. Only works for q and w suffixes?
+
+10.	Any other comments about what you observed?
+
+	When shifting %rax, in addition to seeing the changes in binary you could see the pattern in hex also when each digit would go from 7->3->1 etc. 

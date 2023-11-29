@@ -1,0 +1,13 @@
+BY SUBMITTING THIS FILE TO CARMEN, I CERTIFY THAT I STRICTLY ADHERED TO THE
+TENURES OF THE OHIO STATE UNIVERSITY�S ACADEMIC INTEGRITY POLICY.
+THIS IS THE README FILE FOR LAB 6. 
+Adam Ryan
+8 hours
+Concerns: in create_key, I tried to use a different structure for the loop but it would seg fault. I can't tell why it did because it was all set up correctly, but I structured it differently and then it worked. 
+Also, in the rotate functions, using .section causes compilation errors and I am not sure why. makes the gcc report Error: missing name
+GDB in C: I used gdb to print out multiple tests of create_key working
+GDB in Assembler: Used gdb to trace through create_key to figure out why getchar was not exiting on \n. 
+Yeah. 
+
+
+i spent like 3 hours trying to find out why rotate_left was not found and i just found out that named rotate_left rotate_right in rotate_left.s

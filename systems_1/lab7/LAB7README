@@ -1,0 +1,7 @@
+BY SUBMITTING THIS FILE TO CARMEN, I CERTIFY THAT I STRICTLY ADHERED TO THE
+TENURES OF THE OHIO STATE UNIVERSITY’S ACADEMIC INTEGRITY POLICY.
+THIS IS THE README FILE FOR LAB 7.
+Adam Ryan
+12 hours
+I ran out of time, I understand that it's not finished but I wanted to at least turn in what I had. 
+I traced through to find a seg fault that occurred because calling fopen was failing. 
