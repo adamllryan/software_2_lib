@@ -23,6 +23,8 @@
 - Wireless Networking
 - AI Survey
 - Software Development (Methodologies, Agile, Waterfall, etc. )
+
+2024 (Future): 
 - Principles of Programming
 - Capstone
 - Neural Networks
