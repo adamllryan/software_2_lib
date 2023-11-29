@@ -1,0 +1,23 @@
+Script started on Sun 15 Jan 2023 01:43:59 AM EST
+]0;ryan.1781@cse-sl1:~/CSE4252/lab1[?1034h[ryan.1781@cse-sl1 lab1]$ nano lab1.cpp
+[?1049h[1;24r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.3.1              File: lab1.cpp                                    [3;1H(B[m#include <iostream>[4dusing namespace std;[5dint main()[6d{[7d cout << "Difficulty Levels\n\n";[8;3Hcout << "1 - Easy\n";[9;3Hcout << "2 - Normal\n";[10;3Hcout << "3 - Hard\n";[12;3Hint choice;[13;3Hcout << "Choice: ";[14;3Hcin >> choice;[15;3Hswitch (choice)[16;3H{[17d case 1:[18d cout << "You picked Easy.\n";[19d break;[20;5Hcase 2:[21d cout << "You picked Normal.\n";[22;18H(B[0;7m[ Read 28 lines (Converted from DOS format) ][23d^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[3d[4d[5d[6d[7d[8d[9d[10d[11d[12d[13d[14d[15d[16d[17d[18d[19d[20d[21d7[3;21r8[10S[1;24r[12;2Hbreak;[13;5Hcase 3:[14d cout << "You picked Hard.\n";[15d break;[16;5Hdefault:[17d cout << "You made an illegal choice.\n";[18;3H}[19dreturn 0;[20d}[12d[13d[14d[15d[16d[17d[18d[22d[K[19d[20d[21d[23d[J[24;80H[24;1H[?1049l[?1l>]0;ryan.1781@cse-sl1:~/CSE4252/lab1[ryan.1781@cse-sl1 lab1]$ g++ -o lab1 lab1.cpp
+]0;ryan.1781@cse-sl1:~/CSE4252/lab1[ryan.1781@cse-sl1 lab1]$ ./lab1
+Difficulty Levels
+
+1 - Easy
+2 - Normal
+3 - Hard
+Choice: 2
+You picked Normal.
+]0;ryan.1781@cse-sl1:~/CSE4252/lab1[ryan.1781@cse-sl1 lab1]$ ./lab1
+Difficulty Levels
+
+1 - Easy
+2 - Normal
+3 - Hard
+Choice: 5
+You made an illegal choice.
+]0;ryan.1781@cse-sl1:~/CSE4252/lab1[ryan.1781@cse-sl1 lab1]$ exit
+exit
+
+Script done on Sun 15 Jan 2023 01:45:43 AM EST

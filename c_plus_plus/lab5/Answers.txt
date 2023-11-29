@@ -1,0 +1,16 @@
+1. A's print method gets called. 
+I had to make A's print() virtual. 
+2. I would expect A's print() to be called because b is casted to a meaning it loses all of its extended features. 
+Both should print the same thing because everything is of type A after casting. 
+It is different from 1 because in 2 b is casted down to A before being assigned to the pointer
+meanwhile in 1 b is assigned to the address of A, keeping its methods. 
+3. it will call A's implementation of print() instead of B's. 
+4. 
+
+A aPasser(A a) {
+	return a;
+}
+
+Yes but it will be casted to type A. 
+
+5. Compiler throws accessibility errors saying that A is not accessible in declaration. 

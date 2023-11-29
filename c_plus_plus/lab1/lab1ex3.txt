@@ -1,0 +1,85 @@
+Script started on Sun 15 Jan 2023 01:46:00 AM EST
+]0;ryan.1781@cse-sl1:~/CSE4252/lab1[?1034h[ryan.1781@cse-sl1 lab1]$ nano lab1.cpp
+[?1049h[1;24r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.3.1              File: lab1.cpp                                    [3;1H(B[m#include <iostream>[4dusing namespace std;[5dint main()[6d{[7d cout << "Difficulty Levels\n\n";[8;3Hcout << "1 - Easy\n";[9;3Hcout << "2 - Normal\n";[10;3Hcout << "3 - Hard\n";[12;3Hint choice;[13;3Hcout << "Choice: ";[14;3Hcin >> choice;[15;3Hswitch (choice)[16;3H{[17d case 1:[18d cout << "You picked Easy.\n";[19d break;[20;5Hcase 2:[21d cout << "You picked Normal.\n";[22;18H(B[0;7m[ Read 28 lines (Converted from DOS format) ][23d^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[3d[4d[5d[6d[7d[8d[9d[10d[11d[12d[13d[14d[15d[16d[17d    cas	 1:[1;71H(B[0;7mModified[17;11H(B[m [22d[K[17;11H;[18d[19d	[20;12H[21d7[3;22r8[22d[10S[1;24r[12;2Hbreak;[13;5Hcase 3:[14d cout << "You picked Hard.\n";[15d break;[16;5Hdefault:[17d cout << "You made an illegal choice.\n";[18;3H}[19dreturn 0;[20d}[12;9H[13;12H[14d[15d	[16;12H[17d	[1P<[1P> "You made an illegal choice.\n";[8G>> "You made an illegal choice.\n";[17;9H[18;5H[19d	 0[18;5H[A	 "[A[A	[A "[A[A	[A "[A[A	[A "[A[6;5H[A	 ([A[A[2;21r[2;1H[10T[1;24r[3;1H#include <iostream>[4dusing namespace std;[5dint main()[6d{[7d cout << "Difficulty Levels\n\n";[8;3Hcout << "1 - Easy\n";[9;3Hcout << "2 - Normal\n";[10;3Hcout << "3 - Hard\n";[12;3Hint choice;[13d[14d[15dchoic	-)1)[A[15d1[16;5H[17;13H;[K3;[18d[19d	[20d 2[21d7[3;22r8[22d[10S[1;24r[12;2Hbreak;[13;5Hcase 3:[14d cout << "You picked Hard.\n";[15d break;[16;5Hdefault:[17d cout >> "You made an illegal choice.\n";[18;3H}[19dreturn 0;[20d}[12;9H[13d 3:[K1:[22d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;62H(B[0;7mFile Name to Write [DOS Format]: lab1.cpp                   [23d^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format	(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel	    (B[0;7mM-M(B[m Mac Format	(B[0;7mM-P(B[m Prepend[22;42H[23d[39;49m(B[m[J[1;71H(B[0;7m        [22;31H(B[m[1K (B[0;7m[ Wrote 28 lines ](B[m[K[24;80H[24;1H[?1049l[?1l>]0;ryan.1781@cse-sl1:~/CSE4252/lab1[ryan.1781@cse-sl1 lab1]$ p[Kg++ -o [K[K[K[K[K[K[Knano lab1.cppexit[K./lab1g++ -o lab1 lab1.cpp
+[01m[Klab1.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Klab1.cpp:15:11:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K:[m[K’ before ‘[01m[K;[m[K’ token
+     case 3; 
+[01;32m[K           ^[m[K
+[01m[Klab1.cpp:25:7:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator>>[m[K’ (operand types are ‘[01m[Kstd::ostream {aka std::basic_ostream<char>}[m[K’ and ‘[01m[Kconst char [29][m[K’)
+  cout >> "You made an illegal choice.\n"; 
+[01;32m[K       ^[m[K
+[01m[Klab1.cpp:25:7:[m[K [01;36m[Knote: [m[Kcandidates are:
+In file included from [01m[K/usr/include/c++/4.8.2/string:53:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[Klab1.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.tcc:996:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.tcc:996:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Klab1.cpp:25:10:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ostream {aka std::basic_ostream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_istream<_CharT, _Traits>[m[K’
+  cout >> "You made an illegal choice.\n"; 
+[01;32m[K          ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/istream:882:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:40[m[K,
+                 from [01m[Klab1.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:963:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:963:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Klab1.cpp:25:10:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ostream {aka std::basic_ostream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_istream<_CharT, _Traits>[m[K’
+  cout >> "You made an illegal choice.\n"; 
+[01;32m[K          ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/istream:882:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:40[m[K,
+                 from [01m[Klab1.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:931:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/istream.tcc:931:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Klab1.cpp:25:10:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ostream {aka std::basic_ostream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_istream<_CharT, _Traits>[m[K’
+  cout >> "You made an illegal choice.\n"; 
+[01;32m[K          ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:40:0[m[K,
+                 from [01m[Klab1.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/istream:727:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:727:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Klab1.cpp:25:10:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ostream {aka std::basic_ostream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_istream<char, _Traits>[m[K’
+  cout >> "You made an illegal choice.\n"; 
+[01;32m[K          ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:40:0[m[K,
+                 from [01m[Klab1.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/istream:732:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:732:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Klab1.cpp:25:10:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ostream {aka std::basic_ostream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_istream<char, _Traits>[m[K’
+  cout >> "You made an illegal choice.\n"; 
+[01;32m[K          ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:40:0[m[K,
+                 from [01m[Klab1.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/istream:774:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:774:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Klab1.cpp:25:10:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ostream {aka std::basic_ostream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_istream<char, _Traits>[m[K’
+  cout >> "You made an illegal choice.\n"; 
+[01;32m[K          ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:40:0[m[K,
+                 from [01m[Klab1.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/istream:779:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/istream:779:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[Klab1.cpp:25:10:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ostream {aka std::basic_ostream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_istream<char, _Traits>[m[K’
+  cout >> "You made an illegal choice.\n"; 
+[01;32m[K          ^[m[K
+]0;ryan.1781@cse-sl1:~/CSE4252/lab1[ryan.1781@cse-sl1 lab1]$ exit
+exit
+
+Script done on Sun 15 Jan 2023 01:47:27 AM EST

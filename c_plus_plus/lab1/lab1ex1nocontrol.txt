@@ -1,0 +1,74 @@
+[ryan.1781@cse-sl1 ~]$ cd CSE4252
+[ryan.1781@cse-sl1 CSE4252]$ cd lab1
+-bash: cd: lab1: No such file or directory
+[ryan.1781@cse-sl1 CSE4252]$ cd lab1
+[ryan.1781@cse-sl1 lab1]$ nano exercise1
+[ryan.1781@cse-sl1 lab1]$ ls
+[ryan.1781@cse-sl1 lab1]$ script lab1ex1.txt
+Script started, file is lab1ex1.txt
+[ryan.1781@cse-sl1 lab1]$ nano exercise1.txt
+[ryan.1781@cse-sl1 lab1]$ ls
+exercise1.txt  lab1ex1.txt
+[ryan.1781@cse-sl1 lab1]$ copy exercise1.txt e1copy.txt
+bash: copy: command not found
+[ryan.1781@cse-sl1 lab1]$ cp exercise1.txt e1copy.txt
+[ryan.1781@cse-sl1 lab1]$ ls
+e1copy.txt  exercise1.txt  lab1ex1.txt
+[ryan.1781@cse-sl1 lab1]$ nano e1copy.txt
+[ryan.1781@cse-sl1 lab1]$ vi elcopy.txt
+
+[No write since last change]
+/bin/bash: q: command not found
+
+shell returned 127
+
+Press ENTER or type command to continue
+[ryan.1781@cse-sl1 lab1]$ vim e1copy.txt
+[ryan.1781@cse-sl1 lab1]$ vi e1copy.txt
+[ryan.1781@cse-sl1 lab1]$ cat exercise1.txt e1copy.txt > merged1.txt
+[ryan.1781@cse-sl1 lab1]$ ls
+e1copy.txt  exercise1.txt  lab1ex1.txt  merged1.txt
+[ryan.1781@cse-sl1 lab1]$ vi merged1.txt
+[ryan.1781@cse-sl1 lab1]$ exit
+exit
+Script done, file is lab1ex1.txt
+[ryan.1781@cse-sl1 lab1]$ cat lab1ex1.txt
+Script started on Sun 15 Jan 2023 01:27:28 AM EST
+[ryan.1781@cse-sl1 lab1]$ nano exercise1.txt
+[ryan.1781@cse-sl1 lab1]$ ls
+exercise1.txt  lab1ex1.txt
+[ryan.1781@cse-sl1 lab1]$ copy exercise1.txt e1copy.txt
+bash: copy: command not found
+[ryan.1781@cse-sl1 lab1]$ cp exercise1.txt e1copy.txt
+[ryan.1781@cse-sl1 lab1]$ ls
+e1copy.txt  exercise1.txt  lab1ex1.txt
+[ryan.1781@cse-sl1 lab1]$ nano e1copy.txt
+[ryan.1781@cse-sl1 lab1]$ vi elcopy.txt
+
+[No write since last change]
+/bin/bash: q: command not found
+
+shell returned 127
+
+Press ENTER or type command to continue
+[ryan.1781@cse-sl1 lab1]$ vim e1copy.txt
+[ryan.1781@cse-sl1 lab1]$ vi e1copy.txt
+[ryan.1781@cse-sl1 lab1]$ cat exercise1.txt e1copy.txt > merged1.txt
+[ryan.1781@cse-sl1 lab1]$ ls
+e1copy.txt  exercise1.txt  lab1ex1.txt  merged1.txt
+[ryan.1781@cse-sl1 lab1]$ vi merged1.txt
+[ryan.1781@cse-sl1 lab1]$ exit
+exit
+
+Script done on Sun 15 Jan 2023 01:33:17 AM EST
+[ryan.1781@cse-sl1 lab1]$ nano lab1ex1.txt
+[ryan.1781@cse-sl1 lab1]$ Using username "ryan.1781".
+[ryan.1781@cse-sl1 lab1]$ cat exercise1.txt e1copy.txt > merged1.txt
+[ryan.1781@cse-sl1 lab1]$ ls
+e1copy.txt  exercise1.txt  lab1ex1.txt  merged1.txt
+[ryan.1781@cse-sl1 lab1]$ vi merged1.txt
+[ryan.1781@cse-sl1 lab1]$ exit
+exit
+
+Script done on Sun 15 Jan 2023 01:33:17 AM EST
+[ryan.1781@cse-sl1 lab1]$ nano lab1ex1.txt

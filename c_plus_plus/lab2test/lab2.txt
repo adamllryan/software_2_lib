@@ -1,0 +1,1423 @@
+Script started on Tue 31 Jan 2023 04:16:39 PM EST
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[?1034h[ryan.1781@cse-sl1 lab2]$ nano perLine.txt[K[K[K[K[K[K[K[K[K[K[KextractInt.cpp 
+[?1049h[1;24r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.3.1            File: extractInt.cpp                                [3;1H(B[m#include <iostream>[4d#include <fstream>[5d#include <cstdlib>[6d#include <string>[8dusing namespace std;[9d/* Use of & signifies Call by Reference. What it means in short is whatever you$[10;2Hreflected back to the calling function. So, you need not return values */[11dbool getInt(ifstream&, bool&, int&, string&);[12dint getFileSize(ifstream&);[14dint main ()[15d{[16;9Hint intData;[17;9Hstring junkData;[18;9Hbool valueIsGood = false;[19;9Hstring fileName = "";[20;9Hcout << "Enter the input filename: ";[21;9Hcin >> fileName;[22;18H(B[0;7m[ Read 56 lines (Converted from DOS format) ][23d^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[3d[4d[5d[6d[7d[8d[24;1H[?1049l[?1l>[?1049h[1;80r[?12l[?25h[39;49m(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 2.3.1            File: extractInt.cpp                                [3;1H(B[m#include <iostream>[4d#include <fstream>[5d#include <cstdlib>[6d#include <string>[8dusing namespace std;[9d/* Use of & signifies Call by Reference. What it means in short is whatever you$[10;2Hreflected back to the calling function. So, you need not return values */[11dbool getInt(ifstream&, bool&, int&, string&);[12dint getFileSize(ifstream&);[14dint main ()[15d{[16;9Hint intData;[17;9Hstring junkData;[18;9Hbool valueIsGood = false;[19;9Hstring fileName = "";[20;9Hcout << "Enter the input filename: ";[21;9Hcin >> fileName;[22;18H(B[0;7m[ Read 56 lines (Converted from DOS format) ][23d^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[8d[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 2.3.1            File: extractInt.cpp                                [3;1H(B[m#include <iostream>[4d#include <fstream>[5d#include <cstdlib>[6d#include <string>[8dusing namespace std;[9d/* Use of & signifies Call by Reference. What it means in short is whatever you$[10;2Hreflected back to the calling function. So, you need not return values */[11dbool getInt(ifstream&, bool&, int&, string&);[12dint getFileSize(ifstream&);[14dint main ()[15d{[16;9Hint intData;[17;9Hstring junkData;[18;9Hbool valueIsGood = false;[19;9Hstring fileName = "";[20;9Hcout << "Enter the input filename: ";[21;9Hcin >> fileName;[22;18H(B[0;7m[ Read 56 lines (Converted from DOS format) ][23d^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[79d[22;9Hcout <<endl;[K[23d[K[24;8H[1K	//Open the file in read mode with the ifstream object fin[K[26;9H//Check if the file opened successfully. If not, exit the program[28;9H//Print the size of the file[29;9Hcout << "File Size: " << getFileSize(fin);[31;9Hwhile (getInt(fin, valueIsGood, intData, junkData)){[32;17H/* Code here: Check if the value in intData is good i.e. intege$[33;17HIf value is good, save the intData in intVals.txt else save the$[34;17H*/[35;9H}[36d	// Close the files[38;9Hcout <<"You can now open intVals.txt and junkVals.txt to see the output$[39;9Hreturn 0;[40d}[42dint getFileSize(ifstream& fin){[43;9Hint fileSize = 0; //For our case, fileSize will not exceed integer's li$[44;9H//Write the logic to print the file size (in bytes)[46;9Hreturn fileSize;[47d}[49d// Function returns False if you cannot continue reading the file i.e. either t$[50;1Hbool getInt(ifstream& fin, bool& goodFlag, int& intData, string& junkData){[51;9Hbool canContinue;[52;9H// Code the logic here[54;9Hreturn canContinue;[55d}[79d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[80d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[8d[80;1H[?1049l[?1l>[?1049h[1;84r[?12l[?25h[39;49m(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 2.3.1            File: extractInt.cpp                                [3d(B[m#include <iostream>[4d#include <fstream>[5d#include <cstdlib>[6d#include <string>[8dusing namespace std;[9d/* Use of & signifies Call by Reference. What it means in short is whatever you$[10d reflected back to the calling function. So, you need not return values */[11dbool getInt(ifstream&, bool&, int&, string&);[12dint getFileSize(ifstream&);[14dint main ()[15d{[16;9Hint intData;[17;9Hstring junkData;[18;9Hbool valueIsGood = false;[19;9Hstring fileName = "";[20;9Hcout << "Enter the input filename: ";[21;9Hcin >> fileName;[22;9Hcout <<endl;[24;9H//Open the file in read mode with the ifstream object fin[26;9H//Check if the file opened successfully. If not, exit the program[28;9H//Print the size of the file[29;9Hcout << "File Size: " << getFileSize(fin);[31;9Hwhile (getInt(fin, valueIsGood, intData, junkData)){[32;17H/* Code here: Check if the value in intData is good i.e. intege$[33;17HIf value is good, save the intData in intVals.txt else save the$[34;17H*/[35;9H}[36d	// Close the files[38;9Hcout <<"You can now open intVals.txt and junkVals.txt to see the output$[39;9Hreturn 0;[40d}[42dint getFileSize(ifstream& fin){[43;9Hint fileSize = 0; //For our case, fileSize will not exceed integer's li$[44;9H//Write the logic to print the file size (in bytes)[46;9Hreturn fileSize;[47d}[49d// Function returns False if you cannot continue reading the file i.e. either t$[50dbool getInt(ifstream& fin, bool& goodFlag, int& intData, string& junkData){[51;9Hbool canContinue;[52;9H// Code the logic here[54;9Hreturn canContinue;[55d}[79d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[80d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[8d[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 2.3.1            File: extractInt.cpp                                [3d(B[m#include <iostream>[4d#include <fstream>[5d#include <cstdlib>[6d#include <string>[8dusing namespace std;[9d/* Use of & signifies Call by Reference. What it means in short is whatever you$[10d reflected back to the calling function. So, you need not return values */[11dbool getInt(ifstream&, bool&, int&, string&);[12dint getFileSize(ifstream&);[14dint main ()[15d{[16;9Hint intData;[17;9Hstring junkData;[18;9Hbool valueIsGood = false;[19;9Hstring fileName = "";[20;9Hcout << "Enter the input filename: ";[21;9Hcin >> fileName;[22;9Hcout <<endl;[24;9H//Open the file in read mode with the ifstream object fin[26;9H//Check if the file opened successfully. If not, exit the program[28;9H//Print the size of the file[29;9Hcout << "File Size: " << getFileSize(fin);[31;9Hwhile (getInt(fin, valueIsGood, intData, junkData)){[32;17H/* Code here: Check if the value in intData is good i.e. intege$[33;17HIf value is good, save the intData in intVals.txt else save the$[34;17H*/[35;9H}[36d	// Close the files[38;9Hcout <<"You can now open intVals.txt and junkVals.txt to see the output$[39;9Hreturn 0;[40d}[42dint getFileSize(ifstream& fin){[43;9Hint fileSize = 0; //For our case, fileSize will not exceed integer's li$[44;9H//Write the logic to print the file size (in bytes)[46;9Hreturn fileSize;[47d}[49d// Function returns False if you cannot continue reading the file i.e. either t$[50dbool getInt(ifstream& fin, bool& goodFlag, int& intData, string& junkData){[51;9Hbool canContinue;[52;9H// Code the logic here[54;9Hreturn canContinue;[55d}[79d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[80d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[83d[1;29H(B[0;7m                    File: extractInt.cpp[1;81H                                                            [9;80H(B[m change for these variables in the function is[32;80Hr. This is done by checking valueIsGood boolean[33;80H junkData in junkVals.txt[38;80H!"<<endl;[43;80Hmit so we do not need long[49;80Hhe EOF or the Bad flag got set[79d[K[80d[K[83d(B[0;7m^G(B[m Get Help[83;24H(B[0;7m^O(B[m WriteOut[83;47H(B[0;7m^R(B[m Read File[83;70H(B[0;7m^Y(B[m Prev Page[83;93H(B[0;7m^K(B[m Cut Text[83;116H(B[0;7m^C(B[m Cur Pos[84d(B[0;7m^X(B[m Exit[84;24H(B[0;7m^J(B[m Justify[84;47H(B[0;7m^W(B[m Where Is[84;70H(B[0;7m^V(B[m Next Page[84;93H(B[0;7m^U(B[m UnCut Text[84;116H(B[0;7m^T(B[m To Spell[8d[9d[10d[11d[12d[13d[14d[15d[16d[17d[18d[19d[20d[21d[20;46H[19;30H[A	;[19;30H[20d[21;25H[22;21H[A	[A[A[A[A[A[17;24H[18d[19d[20d[21d[22;21H[Aame[A[A[A[A[A[17;24H[18d[19d[20d[21d[22;21H[23;9H[24;24H[25;9H[26;24H[27;9H[26;24H[25;9H[1;131H(B[0;7mModified[25;9H(B[mifstream file;7[26;82r8[26dM[1;84r[26;1H[26;9Hfile   [K[26;9H[26;82r[82;1H
+[1;84r[25;23H     fileInputVar   Reader;7[26;82r8[26dM[1;84r[26;1H[26;9HfileInputRead    [Z [Z       [K[26;9H[26;82r[82;1H
+[1;84r[25;34H[Z [Z       [Z [Z       input;7[26;82r8[26dM[1;84r[26;1H[26;9Hinput     [K[26;9Hinput.open(" fileName, ios::in);[25;24H      [26d[Z	[8P[26;82r[82;1H
+[1;84r[25;18Hinput.open(fileName, ios::in);[25;18Hinput.	pen(fil	Nam[Z[1P[1P[Z[1P[1P[1P(	ileName	 ios::i	);[K[Z);[K:);[K);[K);[K);[K);[K[Z);[K[Z);[K[Z	;[26d[27;9Hif (!f input.is_open()) {7[28;82r8[28dM[1;84r[28;1H[28;9H[28;17Hcerr <<	"Unable	to open	ifle    [Z [Zfile " << fileName <<endl;7[29;82r8[29dM[1;84r[29;1H[29;9H}	[28;67H7[29;82r8[29dM[1;84r[29;1H[29;9H[29;17Hexit(10);[A[A[A[A[A[23;9H[22;21H[A	[Ah[A[A[A[Z[A[A{[14;12H[A[12;26H[A[A[A[8;21H[A[6;18H[A>[A[5d[6d[7d[8;21H[9d	l[10d[11d[12d[13d[14;12H[15d{[16;21H[17d	[18d [19d[20d[21;25H[22;21H[23;9H[24;26H[25d[26d[27d[28d[29d[30;10H[31;26H[32d[A[30;10H[31;26H[32d[33;9H[34;26H[35d[36d[37;19H[38;10H[39;26H[40;9H[41;26H[42;18H[43d}[44d[45;26H[46d[47d[48d[48;9H[A[A[A[A[A}[42;9H[A[Ainput.close();[A[38;10H[37;19H[A val[A[A[33;9H[32;23H[A[30;10H[29;23H[A[A[A[A[A[23;9H[22;21H[Aame[22;21H[23;9H[24;24H[25d[26d[A[1P[1P[1P[1P[1Pf(fileName);[25;19Hi(fileName);[25;20Hn(fileName);[25;21H[26d[27d[1P[Z[1P[1P[1P[1Pf.is_open()) {[27;15Hi.is_open()) {[27;16Hn.is_open()) {[27;17H[28d[29d[A[A[A[A[A[25d[26d[27d[28d[29d[30;10H[31;17H[32d[33;9H[34;17H[35d[36d[37d[38;10H[39;17H[40d[1P[1P[1P[1P	[1Pf.close();[40;10Hi.close();[40;11Hn.close();[40;12H[41d[42d[43d}[44d[45;12H[46d[47d[48d	fin.seekg(0, ios::end nd dd   d);7[49;82r8[49dM[1;84r[49;1H[49;9HfileSize = fin.s tellG g()/sizeof(s char)+1;7[50;82r8[50dM[1;84r[50;1H[50;9Hfin.seekg(0, ios::start);[51;25H[52d}[53d[54;34H[55d[56;26H[57;31H[58d[58;9Hfor (cahr[Z [Z   char c in  : str[Z [Z  fin.next     [Z [Z    [Z [Z      [K[58;9H[58;9Hchar c = fin.get();7[59;82r8[59dM[1;84r[59;1H[59;9Hwhile c (c!=\ '\n')	{7[60;82r8[60dM[1;84r[60;1H7[60;82r8M[1;84r[61;1H[60;82r[60;1HM[1;84r[62;1H[60;82r[60;1HM[1;84r[63;1H[63;9H}[A[A[A[60;9H[60;17Haoesuntahoeanstu       [Z [Z       [K[60;17Hif {c isdigit(c)}      [Z [Z      [K[60;17Hif * (isgi  digit(c))[59;26H[Z[Z[1P((!='\n') {[59;17H)!='\n') {[59;18H[Zf)!='\n') {[59;18Hi)!='\n') {[59;19Hn)!='\n') {[59;20H.)!='\n') {[59;21Hg)!='\n') {[59;22He)!='\n') {[59;23Ht)!='\n') {[59;24H()!='\n') {[59;25H))!='\n') {[59;26H[A);[K[Z;[K[Z;[59d[58;26H[Z [Z       [Z ;[59d[60;9H[60;17Hif (isd	git(c))	{7[61;82r8[61dM[1;84r[61;1H[61;9H[61;17H}[Af (isd	git(c))	{7[61;82r8[61dM[1;84r[61;1H[61;9H[61;17H[61;25HintData	= intData*10 + c (int)c;[62;18H else {7[63;82r8[63dM[1;84r[63;1H[63;9H[63;17H}[Z[63;9H7[63;82r8M[1;84r[64;1H[A[63;9H[63;17H[63;25Hstring     [K[63;25HjunkData.append(c);[64;18H[65d[65;9H[65;17H[66d[67;10H7[68;82r8[68dM[1;84r[68;1H[68;9Hif (* fin.EOL F  [Z [Zeof())7[69;82r8[69dM[1;84r[69;1H[69;9H[69;17HcanContinuen   [Z [Z       [K[69;17H[69;9H[69;82r[82;1H
+[1;84r[68;23H     [Z [Z      [K[68;9HcanContu inue = fin.EOF    [Z [Z  !fin.eos()   f();[82d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                                                                                [83;1H Y(B[m Yes[K[84d(B[0;7m N(B[m No  [84;17H(B[0;7m^C(B[m Cancel[K[82;62H(B[0;7mFile Name to Write [DOS Format]: extractInt.cpp             [83d^G(B[m Get Help[83;36H(B[0;7mM-D(B[m DOS Format[83;71H(B[0;7mM-A(B[m Append[83;106H(B[0;7mM-B(B[m Backup File[84d(B[0;7m^C(B[m Cancel	         [84;36H(B[0;7mM-M(B[m Mac Format[84;71H(B[0;7mM-P(B[m Prepend[82;48H[83d[39;49m(B[m[J[1;131H(B[0;7m        [82;61H(B[m[1K (B[0;7m[ Wrote 71 lines ](B[m[K[84;140H[84;1H[?1049l[?1l>]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ g++ .[KextractInt.cpp -o lab2.exe
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[KextractInt.cpp:23:23:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::basic_ifstream<char>::basic_ifstream(std::string&)[m[K’
+  ifstream fin(fileName);
+[01;32m[K                       ^[m[K
+[01m[KextractInt.cpp:23:23:[m[K [01;36m[Knote: [m[Kcandidates are:
+In file included from [01m[KextractInt.cpp:2:0[m[K:
+[01m[K/usr/include/c++/4.8.2/fstream:467:7:[m[K [01;36m[Knote: [m[Kstd::basic_ifstream<_CharT, _Traits>::basic_ifstream(const char*, std::ios_base::openmode) [with _CharT = char; _Traits = std::char_traits<char>; std::ios_base::openmode = std::_Ios_Openmode]
+       basic_ifstream(const char* __s, ios_base::openmode __mode = ios_base::in)
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/fstream:467:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ to ‘[01m[Kconst char*[m[K’
+[01m[K/usr/include/c++/4.8.2/fstream:453:7:[m[K [01;36m[Knote: [m[Kstd::basic_ifstream<_CharT, _Traits>::basic_ifstream() [with _CharT = char; _Traits = std::char_traits<char>]
+       basic_ifstream() : __istream_type(), _M_filebuf()
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/fstream:453:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[01m[K/usr/include/c++/4.8.2/fstream:427:11:[m[K [01;36m[Knote: [m[Kstd::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)
+     class basic_ifstream : public basic_istream<_CharT, _Traits>
+[01;32m[K           ^[m[K
+[01m[K/usr/include/c++/4.8.2/fstream:427:11:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ to ‘[01m[Kconst std::basic_ifstream<char>&[m[K’
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kint getFileSize(std::ifstream&)[m[K’:
+[01m[KextractInt.cpp:48:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kstart[m[K’ is not a member of ‘[01m[Kstd::ios {aka std::basic_ios<char>}[m[K’
+  fin.seekg(0, ios::start);
+[01;32m[K               ^[m[K
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kbool getInt(std::ifstream&, bool&, int&, std::string&)[m[K’:
+[01m[KextractInt.cpp:61:21:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kchar[m[K’ to ‘[01m[Kconst char*[m[K’ [-fpermissive]
+    junkData.append(c);
+[01;32m[K                     ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:1006:7:[m[K [01;31m[Kerror: [m[K  initializing argument 1 of ‘[01m[Kstd::basic_string<_CharT, _Traits, _Alloc>& std::basic_string<_CharT, _Traits, _Alloc>::append(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’ [-fpermissive]
+       append(const _CharT* __s)
+[01;32m[K       ^[m[K
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ g++ extractInt.cpp -o lab2.exe[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pnano extractInt.cpp 
+[?1049h[1;84r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.3.1                                File: extractInt.cpp                                                                        [3;1H(B[m#include <iostream>[4d#include <fstream>[5d#include <cstdlib>[6d#include <string>[8dusing namespace std;[9d/* Use of & signifies Call by Reference. What it means in short is whatever you change for these variables in the function is[10d reflected back to the calling function. So, you need not return values */[11dbool getInt(ifstream&, bool&, int&, string&);[12dint getFileSize(ifstream&);[14dint main ()[15d{[16;9Hint intData;[17;9Hstring junkData;[18;9Hbool valueIsGood = false;[19;9Hstring fileName = "";[20;9Hcout << "Enter the input filename: ";[21;9Hcin >> fileName;[22;9Hcout <<endl;[24;9H//Open the file in read mode with the ifstream object fin[25;9Hifstream fin(fileName);[26;9H//Check if the file opened successfully. If not, exit the program[27;9Hif (!fin.is_open()) {[28;17Hcerr << "Unable to open file " << fileName <<endl;[29;17Hexit(10);[30;9H}[31d	//Print the size of the file[32;9Hcout << "File Size: " << getFileSize(fin);[34;9Hwhile (getInt(fin, valueIsGood, intData, junkData)){[35;17H/* Code here: Check if the value in intData is good i.e. integer. This is done by checking valueIsGood boolean[36;17HIf value is good, save the intData in intVals.txt else save the junkData in junkVals.txt[37;17H*/[38;9H}[39d	// Close the files[40;9Hfin.close();[41;9Hcout <<"You can now open intVals.txt and junkVals.txt to see the output!"<<endl;[42;9Hreturn 0;[43d}[45dint getFileSize(ifstream& fin){[46;9Hint fileSize = 0; //For our case, fileSize will not exceed integer's limit so we do not need long[47;9H//Write the logic to print the file size (in bytes)[48;9Hfin.seekg(0, ios::end);[49;9HfileSize = fin.tellg()/sizeof(char)+1;[50;9Hfin.seekg(0, ios::start);[51;9Hreturn fileSize;[52d}[54d// Function returns False if you cannot continue reading the file i.e. either the EOF or the Bad flag got set[55dbool getInt(ifstream& fin, bool& goodFlag, int& intData, string& junkData){[56;9Hbool canContinue;[57;9H// Code the logic here[58;9Hchar c;[59;9Hwhile ((fin.get())!='\n') {[60;17Hif (isdigit(c)) {[61;25HintData = intData*10 + (int)c;[62;17H} else {[63djunkData.append(c);[64;17H}[67;9H}[68d	canContinue = !fin.eof();[69;9Hreturn canContinue;[70d}[82;48H(B[0;7m[ Read 71 lines (Converted from DOS format) ][83d^G(B[m Get Help[83;24H(B[0;7m^O(B[m WriteOut[83;47H(B[0;7m^R(B[m Read File[83;70H(B[0;7m^Y(B[m Prev Page[83;93H(B[0;7m^K(B[m Cut Text[83;116H(B[0;7m^C(B[m Cur Pos[84d(B[0;7m^X(B[m Exit[84;24H(B[0;7m^J(B[m Justify[84;47H(B[0;7m^W(B[m Where Is[84;70H(B[0;7m^V(B[m Next Page[84;93H(B[0;7m^U(B[m UnCut Text[84;116H(B[0;7m^T(B[m To Spell[3d[4d[5d[6d[7d[8d[9d[10d[11d[12d[13d[82d[K[14d[15d[16d[17d[18d[19d[20d[21d[22d[23d[24d[25d[26d[27d[28d[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[39d[40d[41d[42d[43d[44d[45d[46d[47d[48d[49d[50d[51d[52d[53d[54d[55d[56d[57d[58d[59d[60d[61d[62d[63d[64d[64;9H[64;17H}[65d[65;9H[65;17H[66d[65;17H[65;9H[64;18H[A[Z[A}[A[Z[Ai[A[A[Z7[59;82r8[59dM[1;84r[1;131H(B[0;7mModified[59d(B[m[59;82r[82;1H
+[1;84r[58;16H7[59;82r8[59dM[1;84r[59;1H[59;9Hstring s = fin.getLine(     line();[60d[Z) {[K[Z) {[K[31G)	{[Z [Z      [Z [Z       [Z [Z      [K[60;9Hfor (char c in  : s) {[61d[62d[63;25H[64dju[65;18H[66;17H[66;9H[A[A[A[A[A[A[A[A[59ds[Ahar c;[59d	 = fi[1P[1P[Z[1Pfin.[1P[1P[1P[Z[1P;getline();[59;18H7[60;82r8[60dM[1;84r[59;18H[K[60dgetline();[8G[1K	getline();[60;9Hgetline	f);i);n);,); );s);[A		;[A[Z[57;23H[A[A[A[A[A}[51;23H[Ao	::start);[K);[K);[K);[K);[K[Z:);[K[Z);[K[Z);[K[Z);[K);[K);[K);[K[82d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                                                                                [83;1H Y(B[m Yes[K[84d(B[0;7m N(B[m No  [84;17H(B[0;7m^C(B[m Cancel[K[82;62H(B[0;7mFile Name to Write [DOS Format]: extractInt.cpp             [83d^G(B[m Get Help[83;36H(B[0;7mM-D(B[m DOS Format[83;71H(B[0;7mM-A(B[m Append[83;106H(B[0;7mM-B(B[m Backup File[84d(B[0;7m^C(B[m Cancel	         [84;36H(B[0;7mM-M(B[m Mac Format[84;71H(B[0;7mM-P(B[m Prepend[82;48H[83d[39;49m(B[m[J[1;131H(B[0;7m        [82;61H(B[m[1K (B[0;7m[ Wrote 73 lines ](B[m[K[84;140H[84;1H[?1049l[?1l>]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ nano extractInt.cpp g++ extractInt.cpp -o lab2.exe
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[KextractInt.cpp:23:23:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::basic_ifstream<char>::basic_ifstream(std::string&)[m[K’
+  ifstream fin(fileName);
+[01;32m[K                       ^[m[K
+[01m[KextractInt.cpp:23:23:[m[K [01;36m[Knote: [m[Kcandidates are:
+In file included from [01m[KextractInt.cpp:2:0[m[K:
+[01m[K/usr/include/c++/4.8.2/fstream:467:7:[m[K [01;36m[Knote: [m[Kstd::basic_ifstream<_CharT, _Traits>::basic_ifstream(const char*, std::ios_base::openmode) [with _CharT = char; _Traits = std::char_traits<char>; std::ios_base::openmode = std::_Ios_Openmode]
+       basic_ifstream(const char* __s, ios_base::openmode __mode = ios_base::in)
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/fstream:467:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ to ‘[01m[Kconst char*[m[K’
+[01m[K/usr/include/c++/4.8.2/fstream:453:7:[m[K [01;36m[Knote: [m[Kstd::basic_ifstream<_CharT, _Traits>::basic_ifstream() [with _CharT = char; _Traits = std::char_traits<char>]
+       basic_ifstream() : __istream_type(), _M_filebuf()
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/fstream:453:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[01m[K/usr/include/c++/4.8.2/fstream:427:11:[m[K [01;36m[Knote: [m[Kstd::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)
+     class basic_ifstream : public basic_istream<_CharT, _Traits>
+[01;32m[K           ^[m[K
+[01m[K/usr/include/c++/4.8.2/fstream:427:11:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ to ‘[01m[Kconst std::basic_ifstream<char>&[m[K’
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kbool getInt(std::ifstream&, bool&, int&, std::string&)[m[K’:
+[01m[KextractInt.cpp:59:16:[m[K [01;31m[Kerror: [m[Krange-based ‘[01m[Kfor[m[K’ loops are not allowed in C++98 mode
+  for (char c : s) {
+[01;32m[K                ^[m[K
+[01m[KextractInt.cpp:63:21:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kchar[m[K’ to ‘[01m[Kconst char*[m[K’ [-fpermissive]
+    junkData.append(c);
+[01;32m[K                     ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:1006:7:[m[K [01;31m[Kerror: [m[K  initializing argument 1 of ‘[01m[Kstd::basic_string<_CharT, _Traits, _Alloc>& std::basic_string<_CharT, _Traits, _Alloc>::append(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’ [-fpermissive]
+       append(const _CharT* __s)
+[01;32m[K       ^[m[K
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ clear
+[3;J[H[2J]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ clearg++ extractInt.cpp -o lab2.exe
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[KextractInt.cpp:23:23:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::basic_ifstream<char>::basic_ifstream(std::string&)[m[K’
+  ifstream fin(fileName);
+[01;32m[K                       ^[m[K
+[01m[KextractInt.cpp:23:23:[m[K [01;36m[Knote: [m[Kcandidates are:
+In file included from [01m[KextractInt.cpp:2:0[m[K:
+[01m[K/usr/include/c++/4.8.2/fstream:467:7:[m[K [01;36m[Knote: [m[Kstd::basic_ifstream<_CharT, _Traits>::basic_ifstream(const char*, std::ios_base::openmode) [with _CharT = char; _Traits = std::char_traits<char>; std::ios_base::openmode = std::_Ios_Openmode]
+       basic_ifstream(const char* __s, ios_base::openmode __mode = ios_base::in)
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/fstream:467:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ to ‘[01m[Kconst char*[m[K’
+[01m[K/usr/include/c++/4.8.2/fstream:453:7:[m[K [01;36m[Knote: [m[Kstd::basic_ifstream<_CharT, _Traits>::basic_ifstream() [with _CharT = char; _Traits = std::char_traits<char>]
+       basic_ifstream() : __istream_type(), _M_filebuf()
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/fstream:453:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[01m[K/usr/include/c++/4.8.2/fstream:427:11:[m[K [01;36m[Knote: [m[Kstd::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)
+     class basic_ifstream : public basic_istream<_CharT, _Traits>
+[01;32m[K           ^[m[K
+[01m[K/usr/include/c++/4.8.2/fstream:427:11:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ to ‘[01m[Kconst std::basic_ifstream<char>&[m[K’
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kbool getInt(std::ifstream&, bool&, int&, std::string&)[m[K’:
+[01m[KextractInt.cpp:59:16:[m[K [01;31m[Kerror: [m[Krange-based ‘[01m[Kfor[m[K’ loops are not allowed in C++98 mode
+  for (char c : s) {
+[01;32m[K                ^[m[K
+[01m[KextractInt.cpp:63:21:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kchar[m[K’ to ‘[01m[Kconst char*[m[K’ [-fpermissive]
+    junkData.append(c);
+[01;32m[K                     ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:1006:7:[m[K [01;31m[Kerror: [m[K  initializing argument 1 of ‘[01m[Kstd::basic_string<_CharT, _Traits, _Alloc>& std::basic_string<_CharT, _Traits, _Alloc>::append(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’ [-fpermissive]
+       append(const _CharT* __s)
+[01;32m[K       ^[m[K
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ g++ extractInt.cpp -o lab2.exe[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[Kg++ extractInt.cpp -o lab2.exe[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pnano extractInt.cpp 
+[?1049h[1;84r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.3.1                                File: extractInt.cpp                                                                        [3;1H(B[m#include <iostream>[4d#include <fstream>[5d#include <cstdlib>[6d#include <string>[8dusing namespace std;[9d/* Use of & signifies Call by Reference. What it means in short is whatever you change for these variables in the function is[10d reflected back to the calling function. So, you need not return values */[11dbool getInt(ifstream&, bool&, int&, string&);[12dint getFileSize(ifstream&);[14dint main ()[15d{[16;9Hint intData;[17;9Hstring junkData;[18;9Hbool valueIsGood = false;[19;9Hstring fileName = "";[20;9Hcout << "Enter the input filename: ";[21;9Hcin >> fileName;[22;9Hcout <<endl;[24;9H//Open the file in read mode with the ifstream object fin[25;9Hifstream fin(fileName);[26;9H//Check if the file opened successfully. If not, exit the program[27;9Hif (!fin.is_open()) {[28;17Hcerr << "Unable to open file " << fileName <<endl;[29;17Hexit(10);[30;9H}[31d	//Print the size of the file[32;9Hcout << "File Size: " << getFileSize(fin);[34;9Hwhile (getInt(fin, valueIsGood, intData, junkData)){[35;17H/* Code here: Check if the value in intData is good i.e. integer. This is done by checking valueIsGood boolean[36;17HIf value is good, save the intData in intVals.txt else save the junkData in junkVals.txt[37;17H*/[38;9H}[39d	// Close the files[40;9Hfin.close();[41;9Hcout <<"You can now open intVals.txt and junkVals.txt to see the output!"<<endl;[42;9Hreturn 0;[43d}[45dint getFileSize(ifstream& fin){[46;9Hint fileSize = 0; //For our case, fileSize will not exceed integer's limit so we do not need long[47;9H//Write the logic to print the file size (in bytes)[48;9Hfin.seekg(0, ios::end);[49;9HfileSize = fin.tellg()/sizeof(char)+1;[50;9Hfin.seekg(0);[51;9Hreturn fileSize;[52d}[54d// Function returns False if you cannot continue reading the file i.e. either the EOF or the Bad flag got set[55dbool getInt(ifstream& fin, bool& goodFlag, int& intData, string& junkData){[56;9Hbool canContinue;[57;9H// Code the logic here[58;9Hchar c;[59;9Hstring s;[60;9Hgetline(fin, s);[61;9Hfor (char c : s) {[62;17Hif (isdigit(c)) {[63;25HintData = intData*10 + (int)c;[64;17H} else {[65djunkData.append(c);[66;17H}[69;9H}[70d	canContinue = !fin.eof();[71;9Hreturn canContinue;[72d}[82;48H(B[0;7m[ Read 73 lines (Converted from DOS format) ][83d^G(B[m Get Help[83;24H(B[0;7m^O(B[m WriteOut[83;47H(B[0;7m^R(B[m Read File[83;70H(B[0;7m^Y(B[m Prev Page[83;93H(B[0;7m^K(B[m Cut Text[83;116H(B[0;7m^C(B[m Cur Pos[84d(B[0;7m^X(B[m Exit[84;24H(B[0;7m^J(B[m Justify[84;47H(B[0;7m^W(B[m Where Is[84;70H(B[0;7m^V(B[m Next Page[84;93H(B[0;7m^U(B[m UnCut Text[84;116H(B[0;7m^T(B[m To Spell[3d[4d[5d[6d[7d[8d[9d[10d[11d[12d[13d[14d[15d[16d[17d[18d[19d[20d[21d[21;9Hcin >>[82d[K[21;16H	i[22d[23;9H[24;18H[25d[26d[A[1;131H(B[0;7mModified[25;18H(B[mffin(fileName);[25;19Hifin(fileName);[25;20Hnfin(fileName);[25;21H;fin(fileName);[25;22H7[26;82r8[26dM[1;84r[25;22H[K[26dfin(fileName);[8G[1K	fin(fileName);[26;9Hfin.(fileName);[26;13Ho(fileName);[26;14Hp(fileName);[26;15He(fileName);[26;16Hn(fileName);[26;17H(fileNa	e,); );i);o);s);:);[Z::);[Zi);n);[82d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                                                                                [83;1H Y(B[m Yes[K[84d(B[0;7m N(B[m No  [84;17H(B[0;7m^C(B[m Cancel[K[82;62H(B[0;7mFile Name to Write [DOS Format]: extractInt.cpp             [83d^G(B[m Get Help[83;36H(B[0;7mM-D(B[m DOS Format[83;71H(B[0;7mM-A(B[m Append[83;106H(B[0;7mM-B(B[m Backup File[84d(B[0;7m^C(B[m Cancel	         [84;36H(B[0;7mM-M(B[m Mac Format[84;71H(B[0;7mM-P(B[m Prepend[82;48H[83d[39;49m(B[m[J[1;131H(B[0;7m        [82;61H(B[m[1K (B[0;7m[ Wrote 74 lines ](B[m[K[84;140H[84;1H[?1049l[?1l>]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ nano extractInt.cpp g++ extractInt.cpp -o lab2.exe
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[KextractInt.cpp:24:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::basic_ifstream<char>::open(std::string&, const openmode&)[m[K’
+  fin.open(fileName, ios::in);
+[01;32m[K                            ^[m[K
+[01m[KextractInt.cpp:24:28:[m[K [01;36m[Knote: [m[Kcandidate is:
+In file included from [01m[KextractInt.cpp:2:0[m[K:
+[01m[K/usr/include/c++/4.8.2/fstream:538:7:[m[K [01;36m[Knote: [m[Kvoid std::basic_ifstream<_CharT, _Traits>::open(const char*, std::ios_base::openmode) [with _CharT = char; _Traits = std::char_traits<char>; std::ios_base::openmode = std::_Ios_Openmode]
+       open(const char* __s, ios_base::openmode __mode = ios_base::in)
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/fstream:538:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ to ‘[01m[Kconst char*[m[K’
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kbool getInt(std::ifstream&, bool&, int&, std::string&)[m[K’:
+[01m[KextractInt.cpp:60:16:[m[K [01;31m[Kerror: [m[Krange-based ‘[01m[Kfor[m[K’ loops are not allowed in C++98 mode
+  for (char c : s) {
+[01;32m[K                ^[m[K
+[01m[KextractInt.cpp:64:21:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kchar[m[K’ to ‘[01m[Kconst char*[m[K’ [-fpermissive]
+    junkData.append(c);
+[01;32m[K                     ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:1006:7:[m[K [01;31m[Kerror: [m[K  initializing argument 1 of ‘[01m[Kstd::basic_string<_CharT, _Traits, _Alloc>& std::basic_string<_CharT, _Traits, _Alloc>::append(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’ [-fpermissive]
+       append(const _CharT* __s)
+[01;32m[K       ^[m[K
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ g++ extractInt.cpp -o lab2.exe[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pnano extractInt.cpp 
+[?1049h[1;84r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.3.1                                File: extractInt.cpp                                                                        [3;1H(B[m#include <iostream>[4d#include <fstream>[5d#include <cstdlib>[6d#include <string>[8dusing namespace std;[9d/* Use of & signifies Call by Reference. What it means in short is whatever you change for these variables in the function is[10d reflected back to the calling function. So, you need not return values */[11dbool getInt(ifstream&, bool&, int&, string&);[12dint getFileSize(ifstream&);[14dint main ()[15d{[16;9Hint intData;[17;9Hstring junkData;[18;9Hbool valueIsGood = false;[19;9Hstring fileName = "";[20;9Hcout << "Enter the input filename: ";[21;9Hcin >> fileName;[22;9Hcout <<endl;[24;9H//Open the file in read mode with the ifstream object fin[25;9Hifstream fin;[26;9Hfin.open(fileName, ios::in);[27;9H//Check if the file opened successfully. If not, exit the program[28;9Hif (!fin.is_open()) {[29;17Hcerr << "Unable to open file " << fileName <<endl;[30;17Hexit(10);[31;9H}[32d	//Print the size of the file[33;9Hcout << "File Size: " << getFileSize(fin);[35;9Hwhile (getInt(fin, valueIsGood, intData, junkData)){[36;17H/* Code here: Check if the value in intData is good i.e. integer. This is done by checking valueIsGood boolean[37;17HIf value is good, save the intData in intVals.txt else save the junkData in junkVals.txt[38;17H*/[39;9H}[40d	// Close the files[41;9Hfin.close();[42;9Hcout <<"You can now open intVals.txt and junkVals.txt to see the output!"<<endl;[43;9Hreturn 0;[44d}[46dint getFileSize(ifstream& fin){[47;9Hint fileSize = 0; //For our case, fileSize will not exceed integer's limit so we do not need long[48;9H//Write the logic to print the file size (in bytes)[49;9Hfin.seekg(0, ios::end);[50;9HfileSize = fin.tellg()/sizeof(char)+1;[51;9Hfin.seekg(0);[52;9Hreturn fileSize;[53d}[55d// Function returns False if you cannot continue reading the file i.e. either the EOF or the Bad flag got set[56dbool getInt(ifstream& fin, bool& goodFlag, int& intData, string& junkData){[57;9Hbool canContinue;[58;9H// Code the logic here[59;9Hchar c;[60;9Hstring s;[61;9Hgetline(fin, s);[62;9Hfor (char c : s) {[63;17Hif (isdigit(c)) {[64;25HintData = intData*10 + (int)c;[65;17H} else {[66djunkData.append(c);[67;17H}[70;9H}[71d	canContinue = !fin.eof();[72;9Hreturn canContinue;[73d}[82;48H(B[0;7m[ Read 74 lines (Converted from DOS format) ][83d^G(B[m Get Help[83;24H(B[0;7m^O(B[m WriteOut[83;47H(B[0;7m^R(B[m Read File[83;70H(B[0;7m^Y(B[m Prev Page[83;93H(B[0;7m^K(B[m Cut Text[83;116H(B[0;7m^C(B[m Cur Pos[84d(B[0;7m^X(B[m Exit[84;24H(B[0;7m^J(B[m Justify[84;47H(B[0;7m^W(B[m Where Is[84;70H(B[0;7m^V(B[m Next Page[84;93H(B[0;7m^U(B[m UnCut Text[84;116H(B[0;7m^T(B[m To Spell[3d[4d[5d[6d[7d[8d[9d[10d[11d[12d[13d[14d[15d[16d[17d[18d[18;9H[19d[20d[21d[22d[83d[J[84;140H[84;1H[?1049l[?1l>]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ nano extractInt.cpp g++ extractInt.cpp -o lab2.exe
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[KextractInt.cpp:23:32:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::basic_ifstream<char>::basic_ifstream(std::string&, const openmode&)[m[K’
+  ifstream fin(fileName, ios::in);
+[01;32m[K                                ^[m[K
+[01m[KextractInt.cpp:23:32:[m[K [01;36m[Knote: [m[Kcandidates are:
+In file included from [01m[KextractInt.cpp:2:0[m[K:
+[01m[K/usr/include/c++/4.8.2/fstream:467:7:[m[K [01;36m[Knote: [m[Kstd::basic_ifstream<_CharT, _Traits>::basic_ifstream(const char*, std::ios_base::openmode) [with _CharT = char; _Traits = std::char_traits<char>; std::ios_base::openmode = std::_Ios_Openmode]
+       basic_ifstream(const char* __s, ios_base::openmode __mode = ios_base::in)
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/fstream:467:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ to ‘[01m[Kconst char*[m[K’
+[01m[K/usr/include/c++/4.8.2/fstream:453:7:[m[K [01;36m[Knote: [m[Kstd::basic_ifstream<_CharT, _Traits>::basic_ifstream() [with _CharT = char; _Traits = std::char_traits<char>]
+       basic_ifstream() : __istream_type(), _M_filebuf()
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/fstream:453:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[01m[K/usr/include/c++/4.8.2/fstream:427:11:[m[K [01;36m[Knote: [m[Kstd::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)
+     class basic_ifstream : public basic_istream<_CharT, _Traits>
+[01;32m[K           ^[m[K
+[01m[K/usr/include/c++/4.8.2/fstream:427:11:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kbool getInt(std::ifstream&, bool&, int&, std::string&)[m[K’:
+[01m[KextractInt.cpp:59:16:[m[K [01;31m[Kerror: [m[Krange-based ‘[01m[Kfor[m[K’ loops are not allowed in C++98 mode
+  for (char c : s) {
+[01;32m[K                ^[m[K
+[01m[KextractInt.cpp:63:21:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kchar[m[K’ to ‘[01m[Kconst char*[m[K’ [-fpermissive]
+    junkData.append(c);
+[01;32m[K                     ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:1006:7:[m[K [01;31m[Kerror: [m[K  initializing argument 1 of ‘[01m[Kstd::basic_string<_CharT, _Traits, _Alloc>& std::basic_string<_CharT, _Traits, _Alloc>::append(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’ [-fpermissive]
+       append(const _CharT* __s)
+[01;32m[K       ^[m[K
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ clear
+[3;J[H[2J]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ clearg++ extractInt.cpp -o lab2.exe
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[KextractInt.cpp:23:32:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::basic_ifstream<char>::basic_ifstream(std::string&, const openmode&)[m[K’
+  ifstream fin(fileName, ios::in);
+[01;32m[K                                ^[m[K
+[01m[KextractInt.cpp:23:32:[m[K [01;36m[Knote: [m[Kcandidates are:
+In file included from [01m[KextractInt.cpp:2:0[m[K:
+[01m[K/usr/include/c++/4.8.2/fstream:467:7:[m[K [01;36m[Knote: [m[Kstd::basic_ifstream<_CharT, _Traits>::basic_ifstream(const char*, std::ios_base::openmode) [with _CharT = char; _Traits = std::char_traits<char>; std::ios_base::openmode = std::_Ios_Openmode]
+       basic_ifstream(const char* __s, ios_base::openmode __mode = ios_base::in)
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/fstream:467:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ to ‘[01m[Kconst char*[m[K’
+[01m[K/usr/include/c++/4.8.2/fstream:453:7:[m[K [01;36m[Knote: [m[Kstd::basic_ifstream<_CharT, _Traits>::basic_ifstream() [with _CharT = char; _Traits = std::char_traits<char>]
+       basic_ifstream() : __istream_type(), _M_filebuf()
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/4.8.2/fstream:453:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[01m[K/usr/include/c++/4.8.2/fstream:427:11:[m[K [01;36m[Knote: [m[Kstd::basic_ifstream<char>::basic_ifstream(const std::basic_ifstream<char>&)
+     class basic_ifstream : public basic_istream<_CharT, _Traits>
+[01;32m[K           ^[m[K
+[01m[K/usr/include/c++/4.8.2/fstream:427:11:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kbool getInt(std::ifstream&, bool&, int&, std::string&)[m[K’:
+[01m[KextractInt.cpp:59:16:[m[K [01;31m[Kerror: [m[Krange-based ‘[01m[Kfor[m[K’ loops are not allowed in C++98 mode
+  for (char c : s) {
+[01;32m[K                ^[m[K
+[01m[KextractInt.cpp:63:21:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kchar[m[K’ to ‘[01m[Kconst char*[m[K’ [-fpermissive]
+    junkData.append(c);
+[01;32m[K                     ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:1006:7:[m[K [01;31m[Kerror: [m[K  initializing argument 1 of ‘[01m[Kstd::basic_string<_CharT, _Traits, _Alloc>& std::basic_string<_CharT, _Traits, _Alloc>::append(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’ [-fpermissive]
+       append(const _CharT* __s)
+[01;32m[K       ^[m[K
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ g++ extractInt.cpp -o lab2.exe
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[KextractInt.cpp:23:24:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K,[m[K’ token
+  ifstream fin(fileName*, ios::in);
+[01;32m[K                        ^[m[K
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kbool getInt(std::ifstream&, bool&, int&, std::string&)[m[K’:
+[01m[KextractInt.cpp:59:16:[m[K [01;31m[Kerror: [m[Krange-based ‘[01m[Kfor[m[K’ loops are not allowed in C++98 mode
+  for (char c : s) {
+[01;32m[K                ^[m[K
+[01m[KextractInt.cpp:63:21:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kchar[m[K’ to ‘[01m[Kconst char*[m[K’ [-fpermissive]
+    junkData.append(c);
+[01;32m[K                     ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:1006:7:[m[K [01;31m[Kerror: [m[K  initializing argument 1 of ‘[01m[Kstd::basic_string<_CharT, _Traits, _Alloc>& std::basic_string<_CharT, _Traits, _Alloc>::append(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’ [-fpermissive]
+       append(const _CharT* __s)
+[01;32m[K       ^[m[K
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ clear
+[3;J[H[2J]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ clearg++ extractInt.cpp -o lab2.exe
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[KextractInt.cpp:23:15:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator*[m[K’ (operand type is ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’)
+  ifstream fin(*fileName, ios::in);
+[01;32m[K               ^[m[K
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kbool getInt(std::ifstream&, bool&, int&, std::string&)[m[K’:
+[01m[KextractInt.cpp:59:16:[m[K [01;31m[Kerror: [m[Krange-based ‘[01m[Kfor[m[K’ loops are not allowed in C++98 mode
+  for (char c : s) {
+[01;32m[K                ^[m[K
+[01m[KextractInt.cpp:63:21:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kchar[m[K’ to ‘[01m[Kconst char*[m[K’ [-fpermissive]
+    junkData.append(c);
+[01;32m[K                     ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:1006:7:[m[K [01;31m[Kerror: [m[K  initializing argument 1 of ‘[01m[Kstd::basic_string<_CharT, _Traits, _Alloc>& std::basic_string<_CharT, _Traits, _Alloc>::append(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’ [-fpermissive]
+       append(const _CharT* __s)
+[01;32m[K       ^[m[K
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ g++ extractInt.cpp -o lab2.exe
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kbool getInt(std::ifstream&, bool&, int&, std::string&)[m[K’:
+[01m[KextractInt.cpp:59:16:[m[K [01;31m[Kerror: [m[Krange-based ‘[01m[Kfor[m[K’ loops are not allowed in C++98 mode
+  for (char c : s) {
+[01;32m[K                ^[m[K
+[01m[KextractInt.cpp:63:21:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kchar[m[K’ to ‘[01m[Kconst char*[m[K’ [-fpermissive]
+    junkData.append(c);
+[01;32m[K                     ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:1006:7:[m[K [01;31m[Kerror: [m[K  initializing argument 1 of ‘[01m[Kstd::basic_string<_CharT, _Traits, _Alloc>& std::basic_string<_CharT, _Traits, _Alloc>::append(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’ [-fpermissive]
+       append(const _CharT* __s)
+[01;32m[K       ^[m[K
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ clear
+[3;J[H[2J]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ clear
+[3;J[H[2J]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ clearg++ extractInt.cpp -o lab2.exe
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kbool getInt(std::ifstream&, bool&, int&, std::string&)[m[K’:
+[01m[KextractInt.cpp:59:16:[m[K [01;31m[Kerror: [m[Krange-based ‘[01m[Kfor[m[K’ loops are not allowed in C++98 mode
+  for (char c : s) {
+[01;32m[K                ^[m[K
+[01m[KextractInt.cpp:63:21:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kchar[m[K’ to ‘[01m[Kconst char*[m[K’ [-fpermissive]
+    junkData.append(c);
+[01;32m[K                     ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:1006:7:[m[K [01;31m[Kerror: [m[K  initializing argument 1 of ‘[01m[Kstd::basic_string<_CharT, _Traits, _Alloc>& std::basic_string<_CharT, _Traits, _Alloc>::append(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’ [-fpermissive]
+       append(const _CharT* __s)
+[01;32m[K       ^[m[K
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ nano g++ extractInt.cpp -o lab2.exe[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[Kg++ extractInt.cpp -o lab2.exe[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[Kg++ extractInt.cpp -o lab2.exe[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[Kg++ extractInt.cpp -o lab2.exe[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pnano extractInt.cpp 
+[?1049h[1;84r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.3.1                                File: extractInt.cpp                                                                        [3;1H(B[m#include <iostream>[4d#include <fstream>[5d#include <cstdlib>[6d#include <string>[8dusing namespace std;[9d/* Use of & signifies Call by Reference. What it means in short is whatever you change for these variables in the function is[10d reflected back to the calling function. So, you need not return values */[11dbool getInt(ifstream&, bool&, int&, string&);[12dint getFileSize(ifstream&);[14dint main ()[15d{[16;9Hint intData;[17;9Hstring junkData;[18;9Hbool valueIsGood = false;[19;9Hstring fileName = "";[20;9Hcout << "Enter the input filename: ";[21;9Hcin >> fileName;[22;9Hcout <<endl;[24;9H//Open the file in read mode with the ifstream object fin[25;9Hifstream fin(fileName.c_str(), ios::in);[26;9H//Check if the file opened successfully. If not, exit the program[27;9Hif (!fin.is_open()) {[28;17Hcerr << "Unable to open file " << fileName <<endl;[29;17Hexit(10);[30;9H}[31d	//Print the size of the file[32;9Hcout << "File Size: " << getFileSize(fin);[34;9Hwhile (getInt(fin, valueIsGood, intData, junkData)){[35;17H/* Code here: Check if the value in intData is good i.e. integer. This is done by checking valueIsGood boolean[36;17HIf value is good, save the intData in intVals.txt else save the junkData in junkVals.txt[37;17H*/[38;9H}[39d	// Close the files[40;9Hfin.close();[41;9Hcout <<"You can now open intVals.txt and junkVals.txt to see the output!"<<endl;[42;9Hreturn 0;[43d}[45dint getFileSize(ifstream& fin){[46;9Hint fileSize = 0; //For our case, fileSize will not exceed integer's limit so we do not need long[47;9H//Write the logic to print the file size (in bytes)[48;9Hfin.seekg(0, ios::end);[49;9HfileSize = fin.tellg()/sizeof(char)+1;[50;9Hfin.seekg(0);[51;9Hreturn fileSize;[52d}[54d// Function returns False if you cannot continue reading the file i.e. either the EOF or the Bad flag got set[55dbool getInt(ifstream& fin, bool& goodFlag, int& intData, string& junkData){[56;9Hbool canContinue;[57;9H// Code the logic here[58;9Hchar c;[59;9Hstring s;[60;9Hgetline(fin, s);[61;9Hfor (char c : s) {[62;17Hif (isdigit(c)) {[63;25HintData = intData*10 + (int)c;[64;17H} else {[65djunkData.append(c);[66;17H}[69;9H}[70d	canContinue = !fin.eof();[71;9Hreturn canContinue;[72d}[82;48H(B[0;7m[ Read 73 lines (Converted from DOS format) ][83d^G(B[m Get Help[83;24H(B[0;7m^O(B[m WriteOut[83;47H(B[0;7m^R(B[m Read File[83;70H(B[0;7m^Y(B[m Prev Page[83;93H(B[0;7m^K(B[m Cut Text[83;116H(B[0;7m^C(B[m Cur Pos[84d(B[0;7m^X(B[m Exit[84;24H(B[0;7m^J(B[m Justify[84;47H(B[0;7m^W(B[m Where Is[84;70H(B[0;7m^V(B[m Next Page[84;93H(B[0;7m^U(B[m UnCut Text[84;116H(B[0;7m^T(B[m To Spell[3d[4d[5d[6d[7d[8d[9d[10d[11d[12d[13d[14d[15d[16d[17d[18d[19d[20d[21d[22d[23d[24d[25d[26d[27d[28d[82d[K[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[39d[40d[41d[42d[43d[44d[45d[46d[47d[48d[49d[50d[51d[52d[53d[54d[55d[56d[57d[58d[58;9Hc[59d[60d[61dor (ch[62;9H[62;17Hif (isd	git(c[63dt[64;25H[65;31Ht	.append	c)[1;131H(B[0;7mModified[65;42H(B[m;[K[Z;[K[Z;[K;[K;[K;[K;[K;[K;[K[Z;[K[Z ;<;<<; ;c;[64;25H[63;38H[A[63;38H[64;25H[65;38H(c;sc;tc;[Zrc;[Zic;nc;gc;)c;[82d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                                                                                [83;1H Y(B[m Yes[K[84d(B[0;7m N(B[m No  [84;17H(B[0;7m^C(B[m Cancel[K[82;62H(B[0;7mFile Name to Write [DOS Format]: extractInt.cpp             [83d^G(B[m Get Help[83;36H(B[0;7mM-D(B[m DOS Format[83;71H(B[0;7mM-A(B[m Append[83;106H(B[0;7mM-B(B[m Backup File[84d(B[0;7m^C(B[m Cancel	         [84;36H(B[0;7mM-M(B[m Mac Format[84;71H(B[0;7mM-P(B[m Prepend[82;48H(B[0;7my(B[m(B[0;7m (B[m[83d[39;49m(B[m[J[1;131H(B[0;7m        [82;61H(B[m[1K (B[0;7m[ Wrote 73 lines ](B[m[K[84;140H[84;1H[?1049l[?1l>]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ nano extractInt.cpp g++ extractInt.cpp -o lab2.exe
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kbool getInt(std::ifstream&, bool&, int&, std::string&)[m[K’:
+[01m[KextractInt.cpp:59:16:[m[K [01;31m[Kerror: [m[Krange-based ‘[01m[Kfor[m[K’ loops are not allowed in C++98 mode
+  for (char c : s) {
+[01;32m[K                ^[m[K
+[01m[KextractInt.cpp:63:24:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kchar[m[K’ to ‘[01m[Kconst char*[m[K’ [-fpermissive]
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/string:53:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.tcc:212:5:[m[K [01;31m[Kerror: [m[K  initializing argument 1 of ‘[01m[Kstd::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’ [-fpermissive]
+     basic_string<_CharT, _Traits, _Alloc>::
+[01;32m[K     ^[m[K
+[01m[KextractInt.cpp:63:13:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ and ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’)
+    junkData << (string)c;
+[01;32m[K             ^[m[K
+[01m[KextractInt.cpp:63:13:[m[K [01;36m[Knote: [m[Kcandidates are:
+In file included from [01m[K/usr/include/c++/4.8.2/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:2753:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:2753:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:63:24:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:471:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:471:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:63:24:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:476:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:476:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:63:24:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:482:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:482:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:63:24:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:488:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:488:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:63:24:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:493:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:493:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:63:24:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:513:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:513:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:63:24:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/ostream:612:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:63:24:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:530:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:530:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:63:24:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:543:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:543:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:63:24:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:548:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:548:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:63:24:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ g++ extractInt.cpp -o lab2.exe
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kbool getInt(std::ifstream&, bool&, int&, std::string&)[m[K’:
+[01m[KextractInt.cpp:59:16:[m[K [01;31m[Kerror: [m[Krange-based ‘[01m[Kfor[m[K’ loops are not allowed in C++98 mode
+  for (char c : s) {
+[01;32m[K                ^[m[K
+[01m[KextractInt.cpp:63:24:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kchar[m[K’ to ‘[01m[Kconst char*[m[K’ [-fpermissive]
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/string:53:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.tcc:212:5:[m[K [01;31m[Kerror: [m[K  initializing argument 1 of ‘[01m[Kstd::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’ [-fpermissive]
+     basic_string<_CharT, _Traits, _Alloc>::
+[01;32m[K     ^[m[K
+[01m[KextractInt.cpp:63:13:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ and ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’)
+    junkData << (string)c;
+[01;32m[K             ^[m[K
+[01m[KextractInt.cpp:63:13:[m[K [01;36m[Knote: [m[Kcandidates are:
+In file included from [01m[K/usr/include/c++/4.8.2/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:2753:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:2753:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:63:24:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:471:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:471:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:63:24:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:476:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:476:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:63:24:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:482:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:482:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:63:24:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:488:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:488:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:63:24:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:493:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:493:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:63:24:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:513:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:513:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:63:24:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/ostream:612:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:63:24:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:530:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:530:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:63:24:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:543:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:543:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:63:24:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:548:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:548:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:63:24:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    junkData << (string)c;
+[01;32m[K                        ^[m[K
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ g++ extractInt.cpp -o lab2.exe[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pnano extractInt.cpp 
+[?1049h[1;84r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.3.1                                File: extractInt.cpp                                                                        [3;1H(B[m#include <iostream>[4d#include <fstream>[5d#include <cstdlib>[6d#include <string>[8dusing namespace std;[9d/* Use of & signifies Call by Reference. What it means in short is whatever you change for these variables in the function is[10d reflected back to the calling function. So, you need not return values */[11dbool getInt(ifstream&, bool&, int&, string&);[12dint getFileSize(ifstream&);[14dint main ()[15d{[16;9Hint intData;[17;9Hstring junkData;[18;9Hbool valueIsGood = false;[19;9Hstring fileName = "";[20;9Hcout << "Enter the input filename: ";[21;9Hcin >> fileName;[22;9Hcout <<endl;[24;9H//Open the file in read mode with the ifstream object fin[25;9Hifstream fin(fileName.c_str(), ios::in);[26;9H//Check if the file opened successfully. If not, exit the program[27;9Hif (!fin.is_open()) {[28;17Hcerr << "Unable to open file " << fileName <<endl;[29;17Hexit(10);[30;9H}[31d	//Print the size of the file[32;9Hcout << "File Size: " << getFileSize(fin);[34;9Hwhile (getInt(fin, valueIsGood, intData, junkData)){[35;17H/* Code here: Check if the value in intData is good i.e. integer. This is done by checking valueIsGood boolean[36;17HIf value is good, save the intData in intVals.txt else save the junkData in junkVals.txt[37;17H*/[38;9H}[39d	// Close the files[40;9Hfin.close();[41;9Hcout <<"You can now open intVals.txt and junkVals.txt to see the output!"<<endl;[42;9Hreturn 0;[43d}[45dint getFileSize(ifstream& fin){[46;9Hint fileSize = 0; //For our case, fileSize will not exceed integer's limit so we do not need long[47;9H//Write the logic to print the file size (in bytes)[48;9Hfin.seekg(0, ios::end);[49;9HfileSize = fin.tellg()/sizeof(char)+1;[50;9Hfin.seekg(0);[51;9Hreturn fileSize;[52d}[54d// Function returns False if you cannot continue reading the file i.e. either the EOF or the Bad flag got set[55dbool getInt(ifstream& fin, bool& goodFlag, int& intData, string& junkData){[56;9Hbool canContinue;[57;9H// Code the logic here[58;9Hchar c;[59;9Hstring s;[60;9Hgetline(fin, s);[61;9Hfor (char c : s) {[62;17Hif (isdigit(c)) {[63;25HintData = intData*10 + (int)c;[64;17H} else {[65djunkData << (string)c;[66;17H}[69;9H}[70d	canContinue = !fin.eof();[71;9Hreturn canContinue;[72d}[82;48H(B[0;7m[ Read 73 lines (Converted from DOS format) ][83d^G(B[m Get Help[83;24H(B[0;7m^O(B[m WriteOut[83;47H(B[0;7m^R(B[m Read File[83;70H(B[0;7m^Y(B[m Prev Page[83;93H(B[0;7m^K(B[m Cut Text[83;116H(B[0;7m^C(B[m Cur Pos[84d(B[0;7m^X(B[m Exit[84;24H(B[0;7m^J(B[m Justify[84;47H(B[0;7m^W(B[m Where Is[84;70H(B[0;7m^V(B[m Next Page[84;93H(B[0;7m^U(B[m UnCut Text[84;116H(B[0;7m^T(B[m To Spell[3d[4d[5d[6d[7d[8d[9d[10d[11d[12d[13d[14d[15d[16d[17d[18d[19d[20d[21d[22d[23d[24d[25d[26d[27d[28d[82d[K[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[39d[40d[41d[42d[43d[44d[45d[46d[47d[48d[49d[50d[51d[52d[53d[54d[55d[56d[57d[58d[59d[60d[61d[62d[63d[63;9H[63;17H[63;25H[64d[65djunkDat	 << (s[1;131H(B[0;7mModified[65;34H(B[m[1P<[1P+ (string)c;[65;35H[82d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                                                                                [83;1H Y(B[m Yes[K[84d(B[0;7m N(B[m No  [84;17H(B[0;7m^C(B[m Cancel[K[82;62H(B[0;7mFile Name to Write [DOS Format]: extractInt.cpp             [83d^G(B[m Get Help[83;36H(B[0;7mM-D(B[m DOS Format[83;71H(B[0;7mM-A(B[m Append[83;106H(B[0;7mM-B(B[m Backup File[84d(B[0;7m^C(B[m Cancel	         [84;36H(B[0;7mM-M(B[m Mac Format[84;71H(B[0;7mM-P(B[m Prepend[82;48H[83d[39;49m(B[m[J[1;131H(B[0;7m        [82;61H(B[m[1K (B[0;7m[ Wrote 73 lines ](B[m[K[84;140H[84;1H[?1049l[?1l>]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ nano extractInt.cpp g++ extractInt.cpp -o lab2.exe
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kbool getInt(std::ifstream&, bool&, int&, std::string&)[m[K’:
+[01m[KextractInt.cpp:59:16:[m[K [01;31m[Kerror: [m[Krange-based ‘[01m[Kfor[m[K’ loops are not allowed in C++98 mode
+  for (char c : s) {
+[01;32m[K                ^[m[K
+[01m[KextractInt.cpp:63:23:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kchar[m[K’ to ‘[01m[Kconst char*[m[K’ [-fpermissive]
+    junkData + (string)c;
+[01;32m[K                       ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/string:53:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.tcc:212:5:[m[K [01;31m[Kerror: [m[K  initializing argument 1 of ‘[01m[Kstd::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’ [-fpermissive]
+     basic_string<_CharT, _Traits, _Alloc>::
+[01;32m[K     ^[m[K
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ g++ extractInt.cpp -o lab2.exe[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pnano extractInt.cpp 
+[?1049h[1;84r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.3.1                                File: extractInt.cpp                                                                        [3;1H(B[m#include <iostream>[4d#include <fstream>[5d#include <cstdlib>[6d#include <string>[8dusing namespace std;[9d/* Use of & signifies Call by Reference. What it means in short is whatever you change for these variables in the function is[10d reflected back to the calling function. So, you need not return values */[11dbool getInt(ifstream&, bool&, int&, string&);[12dint getFileSize(ifstream&);[14dint main ()[15d{[16;9Hint intData;[17;9Hstring junkData;[18;9Hbool valueIsGood = false;[19;9Hstring fileName = "";[20;9Hcout << "Enter the input filename: ";[21;9Hcin >> fileName;[22;9Hcout <<endl;[24;9H//Open the file in read mode with the ifstream object fin[25;9Hifstream fin(fileName.c_str(), ios::in);[26;9H//Check if the file opened successfully. If not, exit the program[27;9Hif (!fin.is_open()) {[28;17Hcerr << "Unable to open file " << fileName <<endl;[29;17Hexit(10);[30;9H}[31d	//Print the size of the file[32;9Hcout << "File Size: " << getFileSize(fin);[34;9Hwhile (getInt(fin, valueIsGood, intData, junkData)){[35;17H/* Code here: Check if the value in intData is good i.e. integer. This is done by checking valueIsGood boolean[36;17HIf value is good, save the intData in intVals.txt else save the junkData in junkVals.txt[37;17H*/[38;9H}[39d	// Close the files[40;9Hfin.close();[41;9Hcout <<"You can now open intVals.txt and junkVals.txt to see the output!"<<endl;[42;9Hreturn 0;[43d}[45dint getFileSize(ifstream& fin){[46;9Hint fileSize = 0; //For our case, fileSize will not exceed integer's limit so we do not need long[47;9H//Write the logic to print the file size (in bytes)[48;9Hfin.seekg(0, ios::end);[49;9HfileSize = fin.tellg()/sizeof(char)+1;[50;9Hfin.seekg(0);[51;9Hreturn fileSize;[52d}[54d// Function returns False if you cannot continue reading the file i.e. either the EOF or the Bad flag got set[55dbool getInt(ifstream& fin, bool& goodFlag, int& intData, string& junkData){[56;9Hbool canContinue;[57;9H// Code the logic here[58;9Hchar c;[59;9Hstring s;[60;9Hgetline(fin, s);[61;9Hfor (char c : s) {[62;17Hif (isdigit(c)) {[63;25HintData = intData*10 + (int)c;[64;17H} else {[65djunkData + (string)c;[66;17H}[69;9H}[70d	canContinue = !fin.eof();[71;9Hreturn canContinue;[72d}[82;48H(B[0;7m[ Read 73 lines (Converted from DOS format) ][83d^G(B[m Get Help[83;24H(B[0;7m^O(B[m WriteOut[83;47H(B[0;7m^R(B[m Read File[83;70H(B[0;7m^Y(B[m Prev Page[83;93H(B[0;7m^K(B[m Cut Text[83;116H(B[0;7m^C(B[m Cur Pos[84d(B[0;7m^X(B[m Exit[84;24H(B[0;7m^J(B[m Justify[84;47H(B[0;7m^W(B[m Where Is[84;70H(B[0;7m^V(B[m Next Page[84;93H(B[0;7m^U(B[m UnCut Text[84;116H(B[0;7m^T(B[m To Spell[3d[4d[5d[6d[7d[8d[9d[10d[11d[12d[13d[14d[15d[16d[17d[18d[19d[20d[21d[22d[23d[24d[25d[26d[27d[28d[82d[K[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[83d[J[84;140H[84;1H[?1049l[?1l>]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ nano extractInt.cpp g++ extractInt.cpp -o lab2.exe
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kbool getInt(std::ifstream&, bool&, int&, std::string&)[m[K’:
+[01m[KextractInt.cpp:59:16:[m[K [01;31m[Kerror: [m[Krange-based ‘[01m[Kfor[m[K’ loops are not allowed in C++98 mode
+  for (char c : s) {
+[01;32m[K                ^[m[K
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ g++ extractInt.cpp -o lab2.exe
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ ./lab12[K[K2
+bash: ./lab2: No such file or directory
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ ./lab2 perLine.txt
+bash: ./lab2: No such file or directory
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ lab2
+bash: lab2: command not found
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ lab2./lab2 perLine.txt[Kg++ extractInt.cpp -o lab2.exe[K[K[K[K
+^[[A]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ g++ extractInt.cpp -o lab2lab2[K./lab2 perLine.txtlab2[K
+Enter the input filename: perLine.txt
+
+File Size: 49You can now open intVals.txt and junkVals.txt to see the output!
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ lab2g++ extractInt.cpp -o lab2lab2[K./lab2 perLine.txt[Kg++ extractInt.cpp -o lab2.exe[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pnano extractInt.cpp g++ extractInt.cpp -o lab2.exe[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pnano extractInt.cpp 
+[?1049h[1;84r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.3.1                                File: extractInt.cpp                                                                        [3;1H(B[m#include <iostream>[4d#include <fstream>[5d#include <cstdlib>[6d#include <string>[8dusing namespace std;[9d/* Use of & signifies Call by Reference. What it means in short is whatever you change for these variables in the function is[10d reflected back to the calling function. So, you need not return values */[11dbool getInt(ifstream&, bool&, int&, string&);[12dint getFileSize(ifstream&);[14dint main ()[15d{[16;9Hint intData;[17;9Hstring junkData;[18;9Hbool valueIsGood = false;[19;9Hstring fileName = "";[20;9Hcout << "Enter the input filename: ";[21;9Hcin >> fileName;[22;9Hcout <<endl;[24;9H//Open the file in read mode with the ifstream object fin[25;9Hifstream fin(fileName.c_str(), ios::in);[26;9Hifstream iout("intVals.txt", ios::out);[27;9Hifstream jout("junkVals.txt", ios::out);[28;9H//Check if the file opened successfully. If not, exit the program[29;9Hif (!fin.is_open()) {[30;17Hcerr << "Unable to open file " << fileName <<endl;[31;17Hexit(10);[32;9H}[33d	if (!iout.is_open()) {[34;17Hcerr << "Unable to open file intVals.txt" <<endl;[35;17Hexit(10);[36;9H}[37d	if (!jout.is_open()) {[38;17Hcerr << "Unable to open file junkVals.txt" <<endl;[39;17Hexit(10);[40;9H}[41d	//Print the size of the file[42;9Hcout << "File Size: " << getFileSize(fin) << endl;[44;9Hwhile (getInt(fin, valueIsGood, intData, junkData)){[45;17H/* Code here: Check if the value in intData is good i.e. integer. This is done by checking valueIsGood boolean[46;17HIf value is good, save the intData in intVals.txt else save the junkData in junkVals.txt[47;17H*/[48;17Hif (valueIsGood) {[49;25Hiout << intData;[50;17H} else {[51djout << junkData;[52;17H}[53;9H}[54d	// Close the files[55;9Hfin.close();[56;9Hiout.close();[57;9Hjout.close();[58;9Hcout <<"You can now open intVals.txt and junkVals.txt to see the output!"<<endl;[59;9Hreturn 0;[60d}[62dint getFileSize(ifstream& fin){[63;9Hint fileSize = 0; //For our case, fileSize will not exceed integer's limit so we do not need long[64;9H//Write the logic to print the file size (in bytes)[65;9Hfin.seekg(0, ios::end);[66;9HfileSize = fin.tellg()/sizeof(char)+1;[67;9Hfin.seekg(0);[68;9Hreturn fileSize;[69d}[71d// Function returns False if you cannot continue reading the file i.e. either the EOF or the Bad flag got set[72dbool getInt(ifstream& fin, bool& goodFlag, int& intData, string& junkData){[73;9Hbool canContinue;[74;9H// Code the logic here[75;9Hchar c;[76;9Hstring s;[77;9Hgetline(fin, s);[78;9Hif ()[79d	canContinue = !fin.eof();[80;9Hreturn canContinue;[81d}[82;48H(B[0;7m[ Read 82 lines (Converted from DOS format) ][83d^G(B[m Get Help[83;24H(B[0;7m^O(B[m WriteOut[83;47H(B[0;7m^R(B[m Read File[83;70H(B[0;7m^Y(B[m Prev Page[83;93H(B[0;7m^K(B[m Cut Text[83;116H(B[0;7m^C(B[m Cur Pos[84d(B[0;7m^X(B[m Exit[84;24H(B[0;7m^J(B[m Justify[84;47H(B[0;7m^W(B[m Where Is[84;70H(B[0;7m^V(B[m Next Page[84;93H(B[0;7m^U(B[m UnCut Text[84;116H(B[0;7m^T(B[m To Spell[3d[4d[5d[6d[7d[8d[9d[10d[11d[12d[13d[14d[15d[16d[17d[18d[19d[20d[21d[22d[23d[24d[25d[26d[27d[28d[82d[K[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[39d[40d[41d[42d[43d[44d[45d[46d[47d[48d[49d[50d[51d[52d[53d[54d[55d[56d[57d[58d[59d[60d[61d[62d[63d[64d[65d[66d[67d[68d[69d[70d[71d[72d[73d[74d[75d[76d[77d[78d[79d[80d[81d7[2;82r8[82d[40S[1;84r[2;1H[K[42d[43d[44d[45d[A[A[A[A[A[A[39;9Hca[A ()[39d[39;9HcanCont	nue [38;14H[37;21H[38;14H[39;21H= !	in.eof(	[1;131H(B[0;7mModified[39;33H(B[m ;|;||; ; [Z[Z(fin.eof() || ;[39;25H[40du[Ain.eof	) || );f);i);[Zn);[Z.);b);a);d);();));[82d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                                                                                [83;1H Y(B[m Yes[K[84d(B[0;7m N(B[m No  [84;17H(B[0;7m^C(B[m Cancel[K[82;62H(B[0;7mFile Name to Write [DOS Format]: extractInt.cpp             [83d^G(B[m Get Help[83;36H(B[0;7mM-D(B[m DOS Format[83;71H(B[0;7mM-A(B[m Append[83;106H(B[0;7mM-B(B[m Backup File[84d(B[0;7m^C(B[m Cancel	         [84;36H(B[0;7mM-M(B[m Mac Format[84;71H(B[0;7mM-P(B[m Prepend[82;48H[83d[39;49m(B[m[J[1;131H(B[0;7m        [82;61H(B[m[1K (B[0;7m[ Wrote 82 lines ](B[m[K[84;140H[84;1H[?1049l[?1l>]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ nano extractInt.cpp lab2[Knano extractInt.cpp [Knano extractInt.cpp lab2[Kg++ extractInt.cpp -o lab2lab2[Kg++ extractInt.cpp -o lab2
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[KextractInt.cpp:47:9:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ and ‘[01m[Kint[m[K’)
+    iout << intData;
+[01;32m[K         ^[m[K
+[01m[KextractInt.cpp:47:9:[m[K [01;36m[Knote: [m[Kcandidates are:
+In file included from [01m[K/usr/include/c++/4.8.2/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:2753:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:2753:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:471:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:471:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:476:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:476:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:482:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:482:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:488:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:488:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:493:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:493:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:513:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:513:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/ostream:612:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:530:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:530:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:543:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:543:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:548:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:548:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+[01m[KextractInt.cpp:49:9:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ and ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’)
+    jout << junkData;
+[01;32m[K         ^[m[K
+[01m[KextractInt.cpp:49:9:[m[K [01;36m[Knote: [m[Kcandidates are:
+In file included from [01m[K/usr/include/c++/4.8.2/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:2753:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:2753:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:471:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:471:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:476:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:476:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:482:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:482:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:488:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:488:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:493:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:493:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:513:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:513:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/ostream:612:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:530:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:530:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:543:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:543:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:548:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:548:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kbool getInt(std::ifstream&, bool&, int&, std::string&)[m[K’:
+[01m[KextractInt.cpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[KisDigit[m[K’ was not declared in this scope
+   if (isDigit(s[i])) {
+[01;32m[K                   ^[m[K
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ clear
+[3;J[H[2J]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ clearg++ extractInt.cpp -o lab2
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[KextractInt.cpp:47:9:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ and ‘[01m[Kint[m[K’)
+    iout << intData;
+[01;32m[K         ^[m[K
+[01m[KextractInt.cpp:47:9:[m[K [01;36m[Knote: [m[Kcandidates are:
+In file included from [01m[K/usr/include/c++/4.8.2/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:2753:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:2753:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:471:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:471:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:476:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:476:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:482:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:482:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:488:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:488:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:493:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:493:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:513:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:513:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/ostream:612:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:530:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:530:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:543:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:543:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:548:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:548:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+[01m[KextractInt.cpp:49:9:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ and ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’)
+    jout << junkData;
+[01;32m[K         ^[m[K
+[01m[KextractInt.cpp:49:9:[m[K [01;36m[Knote: [m[Kcandidates are:
+In file included from [01m[K/usr/include/c++/4.8.2/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:2753:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:2753:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:471:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:471:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:476:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:476:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:482:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:482:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:488:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:488:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:493:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:493:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:513:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:513:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/ostream:612:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:530:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:530:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:543:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:543:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:548:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:548:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kbool getInt(std::ifstream&, bool&, int&, std::string&)[m[K’:
+[01m[KextractInt.cpp:79:19:[m[K [01;31m[Kerror: [m[K‘[01m[KisDigit[m[K’ was not declared in this scope
+   if (isDigit(s[i])) {
+[01;32m[K                   ^[m[K
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ g++ extractInt.cpp -o lab2
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[KextractInt.cpp:47:9:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ and ‘[01m[Kint[m[K’)
+    iout << intData;
+[01;32m[K         ^[m[K
+[01m[KextractInt.cpp:47:9:[m[K [01;36m[Knote: [m[Kcandidates are:
+In file included from [01m[K/usr/include/c++/4.8.2/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:2753:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:2753:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:471:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:471:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:476:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:476:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:482:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:482:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:488:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:488:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:493:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:493:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:513:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:513:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/ostream:612:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:530:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:530:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:543:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:543:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:548:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:548:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:47:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    iout << intData;
+[01;32m[K            ^[m[K
+[01m[KextractInt.cpp:49:9:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ and ‘[01m[Kstd::string {aka std::basic_string<char>}[m[K’)
+    jout << junkData;
+[01;32m[K         ^[m[K
+[01m[KextractInt.cpp:49:9:[m[K [01;36m[Knote: [m[Kcandidates are:
+In file included from [01m[K/usr/include/c++/4.8.2/string:52:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ios:42[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:2753:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/basic_string.h:2753:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:471:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:471:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:476:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:476:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:482:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:482:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:488:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:488:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:493:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:493:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:513:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:513:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/ostream:612:0[m[K,
+                 from [01m[K/usr/include/c++/4.8.2/iostream:39[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<_CharT, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:530:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:530:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:543:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:543:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+In file included from [01m[K/usr/include/c++/4.8.2/iostream:39:0[m[K,
+                 from [01m[KextractInt.cpp:1[m[K:
+[01m[K/usr/include/c++/4.8.2/ostream:548:5:[m[K [01;36m[Knote: [m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/4.8.2/ostream:548:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[KextractInt.cpp:49:12:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::ifstream {aka std::basic_ifstream<char>}[m[K’ is not derived from ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’
+    jout << junkData;
+[01;32m[K            ^[m[K
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ cr[K[Kclear
+[3;J[H[2J]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ clearg++ extractInt.cpp -o lab2
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ g++ extractInt.cpp -o lab2clear[Kg++ extractInt.cpp -o lab2clear[Kg++ extractInt.cpp -o lab2[6Pnano extractInt.cpp lab2[K
+Enter the input filename: perLine.txt
+
+File Size: 49
+You can now open intVals.txt and junkVals.txt to see the output!
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ lab2g++ extractInt.cpp -o lab2
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ g++ extractInt.cpp -o lab2lab2[K
+Enter the input filename: perLine.txt
+
+File Size: 49
+123  24 �56 �1 �34 �6 �89 �You can now open intVals.txt and junkVals.txt to see the output!
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ lab2g++ extractInt.cpp -o lab2
+^[[A]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ g++ extractInt.cpp -o lab2lab2[K
+Enter the input filename: perLine.txt
+
+File Size: 49
+123  
+24 n
+56 n
+1 n
+34 n
+6 n
+89 n
+You can now open intVals.txt and junkVals.txt to see the output!
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ lab2g++ extractInt.cpp -o lab2
+^[[A]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ g++ extractInt.cpp -o lab2lab2[K
+Enter the input filename: perLine.txt
+
+File Size: 49
+123 123
+24 24August
+56 56
+1 1space
+34 34.5
+6 6t7share
+89 89
+You can now open intVals.txt and junkVals.txt to see the output!
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ lab2g++ extractInt.cpp -o lab2
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ g++ extractInt.cpp -o lab2lab2[K
+Enter the input filename: perLine.txt
+
+File Size: 49
+	1
+	2
+	3
+	
+123 123
+	2
+	4
+	A
+24 24August
+	5
+	6
+	
+56 56
+	1
+	s
+1 1space
+	3
+	4
+	.
+34 34.5
+	6
+	t
+6 6t7share
+	8
+	9
+	
+89 89
+	x
+You can now open intVals.txt and junkVals.txt to see the output!
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ lab2g++ extractInt.cpp -o lab2
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ g++ extractInt.cpp -o lab2lab2[K
+Enter the input filename: perLine.txt
+
+File Size: 49
+	1
+	2
+	3
+123 
+	2
+	4
+	A
+24 24August
+	5
+	6
+56 24August
+	1
+	s
+1 1space
+	3
+	4
+	.
+34 34.5
+	6
+	t
+6 6t7share
+	8
+	9
+89 6t7share
+You can now open intVals.txt and junkVals.txt to see the output!
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ lab2g++ extractInt.cpp -o lab2lab2[Kg++ extractInt.cpp -o lab2
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ g++ extractInt.cpp -o lab2lab2[K
+Enter the input filename: perLine.^[[A^[[A                ^C
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ lab2g++ extractInt.cpp -o lab2
+^[[A]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ g++ extractInt.cpp -o lab2lab2[K
+Enter the input filename: perLine.txt
+
+File Size: 48
+	1
+	2
+	3
+123 
+	2
+	4
+	A
+24 24August
+	5
+	6
+56 24August
+	1
+	s
+1 1space
+	3
+	4
+	.
+34 34.5
+	6
+	t
+6 6t7share
+	8
+	9
+89 6t7share
+You can now open intVals.txt and junkVals.txt to see the output!
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ lab2g++ extractInt.cpp -o lab2
+[01m[KextractInt.cpp:[m[K In function ‘[01m[Kbool getInt(std::ifstream&, bool&, int&, std::string&)[m[K’:
+[01m[KextractInt.cpp:100:22:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+  bool isPositive = s[i]!='-';
+[01;32m[K                      ^[m[K
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ g++ extractInt.cpp -o lab2
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ lab2
+Enter the input filename: test.txt
+
+File Size: 30
+You can now open intVals.txt and junkVals.txt to see the output!
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ lab2g++ extractInt.cpp -o lab2
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ g++ extractInt.cpp -o lab2lab2[K
+Enter the input filename: test.txt
+
+File Size: 30
+You can now open intVals.txt and junkVals.txt to see the output!
+]0;ryan.1781@cse-sl1:~/CSE4252/lab2[ryan.1781@cse-sl1 lab2]$ exit
+exit
+
+Script done on Tue 31 Jan 2023 06:06:44 PM EST
