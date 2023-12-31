@@ -24,7 +24,7 @@
 - AI Survey
 - Software Development (Methodologies, Agile, Waterfall, etc. )
 
-2024 (Future): 
+2024: 
 - Principles of Programming
 - Capstone
 - Neural Networks
